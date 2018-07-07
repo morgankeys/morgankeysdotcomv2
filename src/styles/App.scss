@@ -1,0 +1,178 @@
+//TODO: Remember to delete unused fonts
+$font-display: "Markazi Text", "Constantia", serif; //400,500,600,700
+$font-body: "Lato", "Raleway", sans-serif; //100,300,400,700,900
+
+$headerCollapsedWidth: 250px;
+$headerPadding: 32px;
+
+* {
+  cursor: default;
+}
+
+a {
+  cursor: pointer;
+  &:hover {
+    color: #cf3232;
+  }
+  &:active {
+    color: #0088ff;
+    user-select: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-display;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 48px;
+}
+h2 {
+  font-size: 38px;
+}
+h3 {
+  font-size: 32px;
+}
+
+p,
+div,
+span,
+ul,
+ol,
+li {
+  font-family: $font-body;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a.subtle {
+  font-size: 16px;
+  text-decoration: none;
+
+  &:hover,
+  &:hover:visited {
+    color: #cf3232;
+  }
+
+  &:active {
+    color: #0088ff;
+    user-select: none;
+  }
+
+  &:visited {
+    color: unset;
+    text-decoration: none;
+  }
+}
+
+.cta-link {
+  font-family: $font-display;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.App {
+  .avatar {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.75)
+      ),
+      #333333 url("../assets/images/splash.png") center center/cover no-repeat;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .header {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: flex-end;
+
+    h2 {
+      margin: 16px 0 0 0;
+    }
+  }
+  .headline {
+    color: #fff;
+    margin-right: 16px;
+    max-width: 500px;
+    text-align: left;
+    width: 38%;
+
+    h1 {
+      margin: 8px 0;
+    }
+
+    p {
+      margin-top: 8px;
+    }
+  }
+  .profile {
+    display: none;
+  }
+
+  &.collapsed {
+    .avatar {
+      background: url("../assets/images/splash.png") left -285px top -170px/500%
+        no-repeat;
+      clip-path: circle(70px at 50% 50%);
+      cursor: pointer;
+      height: 140px;
+      width: 140px;
+      min-height: 140px;
+    }
+
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      // background-color: #eaeaea;
+      padding: $headerPadding;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: $headerCollapsedWidth;
+    }
+
+    .profile {
+      display: block;
+
+      .bullet-points {
+        color: #757575;
+        font-weight: 300;
+      }
+    }
+
+    .headline {
+      display: none;
+    }
+  }
+}
+
+.story-panel {
+  bottom: 0;
+  left: $headerCollapsedWidth + ($headerPadding * 2);
+  overflow-y: scroll;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  .six-up {
+    background-color: #f7f7f7;
+    height: 30%;
+  }
+  .story {
+    padding: 32px;
+  }
+}
