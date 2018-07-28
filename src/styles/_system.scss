@@ -1,0 +1,150 @@
+//TODO: Remember to delete unused fonts
+$font-display: "Markazi Text", "Constantia", serif; //400,500,600,700
+$font-body: "Lato", "Raleway", sans-serif; //100,300,400,700,900
+
+$golden-ratio: 1.61803399;
+
+$break-SM: 24em;
+$break-MD: 36em;
+$break-LG: 48em;
+$break-XL: 60em;
+
+$break-mobile: 425px;
+$break-tablet: 768px;
+
+$red: #cf3232;
+$blue: #0088ff;
+
+* {
+  cursor: default;
+}
+
+a {
+  cursor: pointer;
+  &:hover {
+    color: $red;
+  }
+  &:active {
+    color: $blue;
+    user-select: none;
+  }
+}
+
+@media (min-width: $break-mobile) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $font-display;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 56px;
+    line-height: 48px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+
+  p,
+  div,
+  span,
+  ul,
+  ol,
+  li {
+    font-family: $font-body;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  a.subtle {
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover,
+    &:hover:visited {
+      color: #cf3232;
+    }
+
+    &:active {
+      color: #0088ff;
+      user-select: none;
+    }
+
+    &:visited {
+      color: unset;
+      text-decoration: none;
+    }
+  }
+
+  .cta-link {
+    font-family: $font-display;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: $break-mobile) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $font-display;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 24px;
+    // line-height: 18px;
+  }
+
+  p,
+  div,
+  span,
+  ul,
+  ol,
+  li {
+    font-family: $font-body;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  a.subtle {
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover,
+    &:hover:visited {
+      color: #cf3232;
+    }
+
+    &:active {
+      color: #0088ff;
+      user-select: none;
+    }
+
+    &:visited {
+      color: unset;
+      text-decoration: none;
+    }
+  }
+
+  .cta-link {
+    font-family: $font-display;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+}

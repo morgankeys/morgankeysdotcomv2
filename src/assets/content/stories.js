@@ -1,8 +1,28 @@
 import React, { Component } from "react";
 
-const og_coa_body = () => {
+const storyImages = {
+  og_coa:
+    "http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif",
+  og_network:
+    "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/og_network/network.png",
+  ht_uplink:
+    "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/uplink/uplink_in_browser.png",
+  ht_enterprise:
+    "http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif",
+  ht_usage_report:
+    "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ent_reporting/usageReport_improve_cropped.png",
+  ht_android:
+    "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/hightail_for_android/ht-for-android.png"
+};
+
+const OGChartOfAccounts = () => {
   return (
-    <div>
+    <div id="og_coa">
+      <h3>OpenGov Chart of Accounts Editor</h3>
+      <img
+        alt="OpenGov CoA Editor"
+        src="http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif"
+      />
       <p>
         Redesigned a tool for editing financial taxonomies. The tool plays a
         critical role in how users manage their data and is effectively the
@@ -113,4 +133,4 @@ const stories = {
   }
 };
 
-export default stories;
+export { storyImages, OGChartOfAccounts };

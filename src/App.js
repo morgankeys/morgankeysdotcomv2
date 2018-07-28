@@ -1,16 +1,8 @@
 import React, { Component } from "react";
-import "./styles/App.css";
+import "./styles/home.css";
 import BulletPoints from "./assets/content/bulletPoints";
-import StoryPanel from "./components/StoryPanel";
+import StoryPanel from "./components/StoryPanel/StoryPanel";
 // import splash from "./assets/images/splash.png";
-
-const Avatar = props => {
-  return (
-    <div className="avatar" onClick={props.onClick}>
-      {props.children}
-    </div>
-  );
-};
 
 class Headline extends Component {
   constructor(props) {
@@ -41,6 +33,14 @@ class Headline extends Component {
     );
   }
 }
+
+const Avatar = props => {
+  return (
+    <div className="avatar" onClick={props.onClick}>
+      {props.children}
+    </div>
+  );
+};
 
 const Profile = () => {
   return (
@@ -84,7 +84,7 @@ class App extends Component {
   }
 
   render() {
-    const appClass = this.state.collapsed ? "App" : "App collapsed";
+    const appClass = this.state.collapsed ? "main" : "main collapsed";
 
     return (
       <div className={appClass}>
