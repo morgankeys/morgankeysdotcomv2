@@ -30,6 +30,20 @@ a {
   }
 }
 
+@function zindex($type, $step) {
+  @if $type == "overlay" {
+    @return 1000 + $step;
+  }
+  @if $type == "modal" {
+    @return 800 + $step;
+  }
+  @if $type == "content" {
+    @return 100 + $step;
+  } @else {
+    @return 0 + $step;
+  }
+}
+
 @media (min-width: $break-mobile) {
   h1,
   h2,
