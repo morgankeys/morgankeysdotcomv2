@@ -25,9 +25,7 @@ const Headline = props => {
 
 const Avatar = props => {
   return (
-    <div className="avatar" onClick={props.onClick}>
-      {props.children}
-    </div>
+    <div className="avatar" onClick={props.onClick} />
   );
 };
 
