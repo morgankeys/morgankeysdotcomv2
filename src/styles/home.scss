@@ -248,18 +248,21 @@ Root styling
 .cover-page {
   bottom: 0;
   left: 0;
+  position: fixed;
   right: 0;
   top: 0;
-  display: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
   h2 {
     margin: 16px 0 0 0;
   }
 
   .avatar {
-    display: fixed;
     bottom: 0;
     left: 0;
+    position: fixed;
     right: 0;
     top: 0;
     z-index: zindex("overlay", 1);
@@ -267,12 +270,11 @@ Root styling
   .headline {
     // align-items: center;
     bottom: 0;
-    display: fixed;
     // display: flex;
     // justify-content: flex-end;
-    left: 0;
-    right: 0;
-    top: 0;
+    // left: 0;
+    // right: 0;
+    // top: 0;
     z-index: zindex("overlay", 2);
 
     .text-block {

@@ -244,24 +244,23 @@ Root styling
 .cover-page {
   bottom: 0;
   left: 0;
+  position: fixed;
   right: 0;
   top: 0;
-  display: fixed; }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
   .cover-page h2 {
     margin: 16px 0 0 0; }
   .cover-page .avatar {
-    display: fixed;
     bottom: 0;
     left: 0;
+    position: fixed;
     right: 0;
     top: 0;
     z-index: 1001; }
   .cover-page .headline {
     bottom: 0;
-    display: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
     z-index: 1002; }
   .cover-page .name-and-bullets {
     display: none; }
