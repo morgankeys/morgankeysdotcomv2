@@ -44,10 +44,9 @@ a {
       color: unset;
       text-decoration: none; }
   .cta-link {
-    font-family: "Markazi Text", "Constantia", serif;
-    font-weight: 400;
-    font-size: 24px;
-    text-decoration: underline; } }
+    font-family: "Lato", "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px; } }
 
 @media (max-width: 425px) {
   h1,
@@ -107,14 +106,15 @@ Root styling
 .main.collapsed .cover-page {
   align-items: flex-start;
   bottom: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   left: 0;
   position: fixed;
   top: 0;
-  width: 300px;
-  padding-left: 32px; }
+  max-width: 300px;
+  padding: 0 16px 0 32px; }
   .main.collapsed .cover-page .name-and-bullets {
     display: block;
     margin: 0; }

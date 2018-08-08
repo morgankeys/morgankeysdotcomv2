@@ -1,5 +1,5 @@
 const bulletPoints = [
-  "Currently at BuildingConnected. Previously OpenGov, Hightail",
+  "Currently at BuildingConnected. Previously OpenGov, Hightail.",
   "Bachelor’s in Math and Creative Writing",
   "Master’s in Human-Computer Interaction, Decision Science",
   "Focus on enterprise workflow products",

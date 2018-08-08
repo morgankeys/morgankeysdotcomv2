@@ -44,10 +44,9 @@ a {
       color: unset;
       text-decoration: none; }
   .cta-link {
-    font-family: "Markazi Text", "Constantia", serif;
-    font-weight: 400;
-    font-size: 24px;
-    text-decoration: underline; } }
+    font-family: "Lato", "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px; } }
 
 @media (max-width: 425px) {
   h1,
@@ -115,7 +114,7 @@ a {
 <StoryFramer />
 */
 .story {
-  padding: 32px; }
+  padding: 0 32px 0 16px; }
   .story img {
     width: 100%; }
 

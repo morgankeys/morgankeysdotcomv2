@@ -32,7 +32,7 @@ $headerPadding: 32px;
 <StoryFramer />
 */
 .story {
-  padding: 32px;
+  padding: 0 32px 0 16px;
   img {
     width: 100%;
   }
@@ -48,7 +48,6 @@ $headerPadding: 32px;
     align-content: center;
     display: flex;
     flex-wrap: wrap;
-    // height: 95vh;
     justify-content: center;
 
     .img-wrapper {
