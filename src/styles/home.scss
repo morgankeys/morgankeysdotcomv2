@@ -7,36 +7,6 @@ $headerPadding: 32px;
 Root styling
 */
 
-// @media (max-width: $break-mobile) {
-//   .main {
-//     .header {
-//       align-items: center;
-//       display: flex;
-//       height: 100vh;
-//       justify-content: flex-end;
-//
-//       h2 {
-//         margin: 16px 0 0 0;
-//       }
-//     }
-//     &.collapsed {
-//       .header {
-//         flex-direction: row;
-//         align-items: center;
-//         justify-content: flex-start;
-//         padding: $headerPadding;
-//         position: fixed;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         height: 32px;
-//       }
-//     }
-//   }
-// }
-//
-
-
 // /*
 // <Headline />
 // */
@@ -152,6 +122,38 @@ Root styling
     }
   }
 }
+// @media (max-width: $break-mobile) {
+//   .main {
+//     .header {
+//       align-items: center;
+//       display: flex;
+//       height: 100vh;
+//       justify-content: flex-end;
+//
+//       h2 {
+//         margin: 16px 0 0 0;
+//       }
+//     }
+//     &.collapsed {
+//       .header {
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: flex-start;
+//         padding: $headerPadding;
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         height: 32px;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
 
 /*
 <Avatar>
@@ -192,19 +194,24 @@ Root styling
 /*
 <Headline>
 */
-.main .headline {
-  bottom: 0;
-  color: #fff;
-  margin-right: 16px;
-  max-width: 500px;
-  text-align: left;
-  width: 38%;
-  z-index: zindex("overlay", 2);
+@media (min-width: $break-mobile){
+  .main .headline {
+    bottom: 0;
+    color: #fff;
+    margin-right: 16px;
+    max-width: 500px;
+    text-align: left;
+    width: 38%;
+    z-index: zindex("overlay", 2);
 
-  .text-block {
+    .text-block {
+    }
+  }
+
+  .main.collapsed .headline {
+    display: none;
   }
 }
+@media (max-width: $break-mobile) {
 
-.main.collapsed .headline {
-  display: none;
 }
