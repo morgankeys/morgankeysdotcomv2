@@ -1,7 +1,18 @@
 import React, { Component } from "react";
-import "./../../styles/home.css";
+// import "./../../styles/home.css";
 import "./story-panel.css";
-import { storyImages, OGChartOfAccounts } from "./../../assets/content/stories";
+import {
+  storyImages,
+  OGChartOfAccounts,
+  OGNetwork,
+  HTUplink,
+  HTEnterprise,
+  HTUsageReport,
+  HTAndroid,
+  GradPIXD,
+  YSIUsability,
+  TCSQualcomm
+} from "./../../assets/content/stories";
 
 const StoryFrame = props => {
   return <div className="story">{props.children}</div>;
@@ -12,6 +23,14 @@ const Stories = () => {
     <div className="stories">
       <StoryFrame>
         <OGChartOfAccounts />
+        <OGNetwork />
+        <HTUplink />
+        <HTEnterprise />
+        <HTUsageReport />
+        <HTAndroid />
+        <GradPIXD />
+        <YSIUsability />
+        <TCSQualcomm />
       </StoryFrame>
     </div>
   );

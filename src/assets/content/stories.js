@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const storyImages = {
   og_coa:
@@ -42,6 +42,266 @@ const OGChartOfAccounts = () => {
           tool more robust and easier to navigate
         </li>
         <li>Contributed code to help refine the UI</li>
+      </ul>
+    </div>
+  );
+};
+
+const OGNetwork = () => {
+  return (
+    <div id="og_network">
+      <h3>OpenGov Network</h3>
+      <img
+        alt="OpenGov Network"
+        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/og_network/network.png"
+      />
+      <p>
+        Starting with a simple internal feature-request, I helped develop the
+        concept into an entirely new app for the OpenGov platform. It became an
+        internal and customer hit that allowed users to experience OpenGov in an
+        entirely new way.
+      </p>
+      <ul>
+        <li>Focused long-term platform goals into an MVP</li>
+        <li>Sparkline-style charts create a simple yet data-rich experience</li>
+        <li>
+          Focused filtering options based on understanding of user priorities
+        </li>
+        <li>Designed strategically to leverage other existing platform apps</li>
+      </ul>
+    </div>
+  );
+};
+
+const HTUplink = () => {
+  return (
+    <div id="ht_uplink">
+      <h3>Hightail Uplink</h3>
+      <img
+        alt="Hightail Uplink"
+        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/uplink/uplink_in_browser.png"
+      />
+      <p>
+        I advocated giving more attention to a popular yet neglected product and
+        eventually was charged with leading a complete redesign (Fall 2013)
+      </p>
+      <ul>
+        <li>
+          Used user-preferences as qualitative data to examine user needs. This
+          proved more effective than traditional analytics and allowed us to
+          gain early insight without costly user-interviews.
+        </li>
+        <li>
+          Prototyped concepts in html/css/javascript in order to try out
+          different layouts and transitions
+        </li>
+        <li>
+          Created key onboarding and engagement experiences that produced
+          significant upticks in adoption and engagement (+8k users and +45k
+          file-sends in the first 3 months)
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+const HTEnterprise = () => {
+  return (
+    <div id="ht_enterpise">
+      <h3>Hightail Enterprise</h3>
+      <div class="video-wrapper">
+        <iframe
+          title="Hightail Enterprise"
+          src="//player.vimeo.com/video/95018028?title=0&amp;byline=0&amp;portrait=0"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+        />
+      </div>
+      <p>
+        As lead designer for Hightail's enterprise products, I created or
+        redesigned many major features and oversaw the implementation of
+        integrations by outside contractors. I was also chosen as an official
+        liaison, responsible for communicating needs and promoting Design
+        thinking to the enterprise business unit. (Fall 2011 - Summer 2014)
+      </p>
+      <p>Major features worked on:</p>
+      <ul>
+        <li>Reporting, as well as exporting and scheduling of reports</li>
+        <li>Admin dashboard</li> <li>User-group administration</li>
+        <li>Admin-policy configuration</li>
+        <li>Integrations with SharePoint, SalesForce, IBM, and Netsuite</li>
+      </ul>
+    </div>
+  );
+};
+
+const HTUsageReport = () => {
+  return (
+    <div id="ht_usage_report">
+      <h3>Hightail Usage Report</h3>
+      <img
+        alt="Hightail Usage Report"
+        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ent_reporting/usageReport_improve_cropped.png"
+      />
+      <p>
+        I concepted and designed an administrative feature for enterprise
+        accounts to meet e-discovery requirements. The feature gave admins a
+        simple yet powerful interface to browse activity, monitor collaboration
+        between internal employees and external contractors, and take action to
+        investigate or block suspicious actions. I also pushed to include
+        important usability and navigation improvements to the larger admin
+        console as part of the project.
+      </p>
+      <p>
+        Usage Report was the most advanced feature that Hightail offered and was
+        often a highlight of sales demos. (Fall 2012)
+      </p>
+    </div>
+  );
+};
+
+const HTAndroid = () => {
+  return (
+    <div id="ht_android">
+      <h3>Hightail for Android</h3>
+      <img
+        alt="Hightail for Android"
+        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/hightail_for_android/ht-for-android.png"
+      />
+      <p>
+        I worked with classmates to design and prototype a ubiquitous-computing
+        experience for the University of Michigan's brand-new North Quad
+        Residential complex. We used contextual inquiry and "speed-dating"
+        techniques to understand users and the physical environment. The project
+        required us to design for an ecosystem of wall-displays, smartphones,
+        and web-apps. We presented to community directors and developed concept
+        videos. The final prototype featured live QR-codes and semi-responsive
+        adaptive text. (Spring 2010)
+      </p>
+    </div>
+  );
+};
+
+const GradPIXD = () => {
+  return (
+    <div id="grad_pixd">
+      <h3>Pervasive Interaction and Experience Design</h3>
+      <div class="video-wrapper">
+        <iframe
+          title="Pervasive Interaction and Experience Design"
+          src="//player.vimeo.com/video/22869156?title=0&amp;byline=0&amp;portrait=0"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+        />
+      </div>
+      <p>
+        I worked with classmates to design and prototype a ubiquitous-computing
+        experience for the University of Michigan’s brand-new North Quad
+        Residential complex. We used contextual inquiry and “speed-dating”
+        techniques to understand users and the physical environment. The project
+        required us to design for an ecosystem of wall-displays, smartphones,
+        and web-apps. We presented to community directors and developed concept
+        videos. The final prototype featured live QR-codes and semi-responsive
+        adaptive text. (Spring 2010)
+      </p>
+    </div>
+  );
+};
+
+const YSIUsability = () => {
+  return (
+    <div id="ysi_usability">
+      <h3>YouSendIt Usability-Testing</h3>
+      <img
+        alt="YouSendIt Usability-Testing"
+        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ysi_usability/ysi_mobileapp_homepage.png"
+      />
+      <p>
+        As part of a complete redesign of YouSendIt's iOS app, I performed a
+        variety of usability tests with no budget. Uncovered frustrating
+        visual-design flaws, allowing the team to redesign before launch.
+        (Summer 2012)
+      </p>
+      <p>Tests included: </p>
+      <ul>
+        <li>
+          Coffee shop usability surveys: camping out at coffee shops, I exposed
+          volunteers to candidate page-layouts and iconography
+        </li>
+        <li>
+          In-house user-testing: I tested clickable mock-ups with internal
+          volunteers to assess the usability of folder/file interaction
+          paradigms
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+const IntelHFE = () => {
+  return (
+    <div id="intel_hfe">
+      <h3>Human-Factors Engineering at Intel</h3>
+      <img
+        alt="Human-Factors Engineering at Intel"
+        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/intel/intel_collage.png"
+      />
+      <p>
+        As a Summer Intern with Intel's Human Factors Engineering team, I
+        performed a usability study on the "Circuit" web-portal, the home-page
+        for the majority of Intel's 80,000+ employees. (Summer 2010)
+      </p>
+      <ul>
+        <li>
+          Collaborated with a mentor to conduct card-sorting exercises for 340+
+          users
+        </li>
+        <li>
+          Designed a branching survey flow that interconnected a Qualtrics
+          survey with a web-based card-sorting tool
+        </li>
+        <li>
+          Conducted 25+ user interviews and produced affinity notes and
+          observations
+        </li>
+        <li>Designed and lead group participatory-design sessions</li>
+      </ul>
+    </div>
+  );
+};
+
+const TCSQualcomm = () => {
+  return (
+    <div id="intel_hfe">
+      <h3>Qualcomm Trucking Apps</h3>
+      <img
+        alt="Qualcomm Trucking Apps"
+        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/tcs/qualcomm.png"
+      />
+      <p>
+        As a consultant at Tata Consultancy Services, I worked with Qualcomm to
+        design Android versions of two apps from the truck-based Mobile
+        Computing Platform. I delivered specs for phone and tablet versions that
+        took into account safety considerations and government regulations.
+        (Fall 2011)
+      </p>
+      <ul>
+        <li>
+          Compliance: An accountability app that tracked driving hours, logs,
+          and other information in accordance with strict regulations. Allowed
+          drivers to perform vehicle inspections and present their logs to
+          highway patrol officers upon request. Included a locked "driving mode"
+          to meet safety requirements.
+        </li>
+        <li>
+          Fleet Visibility: A tracking app that gave drivers an overview of
+          their trip plan, including designated drops, fuel stops, and other
+          tasks.
+        </li>
       </ul>
     </div>
   );
@@ -133,4 +393,16 @@ const stories = {
   }
 };
 
-export { storyImages, OGChartOfAccounts };
+export {
+  storyImages,
+  OGChartOfAccounts,
+  OGNetwork,
+  HTUplink,
+  HTEnterprise,
+  HTUsageReport,
+  HTAndroid,
+  GradPIXD,
+  YSIUsability,
+  IntelHFE,
+  TCSQualcomm
+};

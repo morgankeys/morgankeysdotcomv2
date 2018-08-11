@@ -38,6 +38,20 @@ $headerPadding: 32px;
   }
   .img-wrapper {
   }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 42.85%; /* 21:9  16:9 = 56.25%*/
+    height: 50%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 /*

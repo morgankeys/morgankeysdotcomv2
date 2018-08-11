@@ -32,6 +32,10 @@ a {
   }
 }
 
+@function spacer($multiplier: 1) {
+  @return $multiplier * 8px;
+}
+
 @function zindex($type, $step) {
   @if $type == "overlay" {
     @return 1000 + $step;
@@ -41,6 +45,9 @@ a {
   }
   @if $type == "content" {
     @return 100 + $step;
+  }
+  @if $type == "background" {
+    @return -100 + $step;
   } @else {
     @return 0 + $step;
   }

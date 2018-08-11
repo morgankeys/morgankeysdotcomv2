@@ -1,0 +1,100 @@
+@media (max-width: $break-mobile) {
+  // **********************************
+  // Root styling for mobile
+  // **********************************
+
+  .home {
+    .cover-page {
+      align-items: flex-end;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+
+      .name-and-bullets {
+        display: none;
+      }
+    }
+  }
+
+  .home.collapsed {
+    .name-and-bullets {
+      display: block;
+    }
+  }
+
+  // **********************************
+  // <Avatar />
+  // **********************************
+  .avatar {
+    align-items: flex-end;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 1)
+      ),
+      #333333
+        url("https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/splash_img/splash-small.png")
+        center center/cover no-repeat;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: zindex("background", 1);
+  }
+  .collapsed .avatar {
+    background: url("https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/splash_img/splash-small.png")
+      left -66px top -38px/500% no-repeat;
+    clip-path: circle(16px at 50% 50%);
+    cursor: pointer;
+    height: spacer(4);
+    min-height: spacer(4);
+    width: spacer(4);
+  }
+
+  // **********************************
+  // <Headline />
+  // **********************************
+  .headline {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: spacer(2);
+    margin-right: spacer(2);
+    max-width: 500px;
+    padding: spacer(3);
+    text-align: left;
+    width: 100%;
+    z-index: zindex("overlay", 2);
+
+    h2 {
+      margin: spacer(2) 0 0 0;
+    }
+
+    p {
+      margin-top: spacer();
+    }
+  }
+
+  .collapsed .headline {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: spacer(4);
+  }
+
+  // End small device styles
+}
