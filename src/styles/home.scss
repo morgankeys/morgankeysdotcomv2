@@ -150,11 +150,6 @@ Root styling
 //   }
 // }
 
-
-
-
-
-
 /*
 <Avatar>
 */
@@ -165,7 +160,9 @@ Root styling
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.75)
     ),
-    #333333 url("../assets/images/splash.png") center center/cover no-repeat;
+    #333333
+      url("https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/splash_img/splash-small.png")
+      center center/cover no-repeat;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -175,8 +172,8 @@ Root styling
 }
 
 .main.collapsed .avatar {
-  background: url("../assets/images/splash.png") left -285px top -170px/500%
-    no-repeat;
+  background: url("https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/splash_img/splash-small.png")
+    left -285px top -170px/500% no-repeat;
   bottom: unset;
   clip-path: circle(70px at 50% 50%);
   cursor: pointer;
@@ -194,7 +191,7 @@ Root styling
 /*
 <Headline>
 */
-@media (min-width: $break-mobile){
+@media (min-width: $break-mobile) {
   .main .headline {
     bottom: 0;
     color: #fff;
@@ -213,5 +210,4 @@ Root styling
   }
 }
 @media (max-width: $break-mobile) {
-
 }
