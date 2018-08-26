@@ -1,0 +1,133 @@
+@import "./../../styles/_system.scss";
+
+$headerCollapsedWidth: 250px;
+$headerPadding: 32px;
+
+/*
+<StoryPanel />
+*/
+@media (min-width: $break-tablet) {
+  .story-panel {
+    bottom: 0;
+    left: $headerCollapsedWidth + ($headerPadding * 2);
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+}
+
+/*
+<StoryFramer />
+*/
+@media (min-width: $break-tablet) {
+  .story {
+    // padding: 0 32px 0 16px;
+    padding: 12.5%;
+
+    h3 {
+      margin: 0 0 32px 0;
+    }
+
+    img {
+      width: 100%;
+    }
+    .img-wrapper {
+    }
+
+    .videoWrapper {
+      position: relative;
+      padding-bottom: 42.85%; /* 21:9  16:9 = 56.25%*/
+      height: 50%;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+/*
+<SixUp />
+*/
+@media (min-width: $break-tablet) {
+  .six-up {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .img-wrapper {
+      $wrapperWidth: 250px;
+      align-items: center;
+      display: flex;
+      height: (1 / $golden-ratio) * $wrapperWidth;
+      margin: 32px;
+      width: $wrapperWidth;
+
+      img {
+        box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.15);
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (min-width: $break-mobile) and (max-width: $break-tablet) {
+  .six-up {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    // height: 95vh;
+    justify-content: center;
+
+    .img-wrapper {
+      $wrapperWidth: 200px;
+      align-items: center;
+      display: flex;
+      height: (1 / $golden-ratio) * $wrapperWidth;
+      margin: 32px;
+      width: $wrapperWidth;
+
+      img {
+        box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.15);
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: $break-mobile) {
+  .six-up {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    // height: 85vh;
+    justify-content: center;
+
+    .img-wrapper {
+      $wrapperWidth: 240px;
+      align-items: center;
+      display: flex;
+      height: (1 / $golden-ratio) * $wrapperWidth;
+      margin: 24px;
+      object-fit: contain;
+      width: $wrapperWidth;
+
+      img {
+        border: none;
+        box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+}

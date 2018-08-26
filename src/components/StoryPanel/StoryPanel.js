@@ -23,14 +23,30 @@ const Stories = () => {
     <div className="stories">
       <StoryFrame>
         <OGChartOfAccounts />
-        <OGNetwork />
-        <HTUplink />
-        <HTEnterprise />
-        <HTUsageReport />
-        <HTAndroid />
-        <GradPIXD />
-        <YSIUsability />
-        <TCSQualcomm />
+      </StoryFrame>
+        <StoryFrame>
+          <OGNetwork />
+      </StoryFrame>
+      <StoryFrame>
+          <HTUplink />
+      </StoryFrame>
+      <StoryFrame>
+          <HTEnterprise />
+      </StoryFrame>
+      <StoryFrame>
+          <HTUsageReport />
+      </StoryFrame>
+      <StoryFrame>
+          <HTAndroid />
+      </StoryFrame>
+      <StoryFrame>
+          <GradPIXD />
+      </StoryFrame>
+      <StoryFrame>
+          <YSIUsability />
+      </StoryFrame>
+      <StoryFrame>
+          <TCSQualcomm />
       </StoryFrame>
     </div>
   );
