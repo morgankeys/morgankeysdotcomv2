@@ -69,7 +69,9 @@ class Home extends Component {
   }
 
   reset() {
-    this.state.collapsed ? null : this.setState({ collapsed: true });
+    this.state.collapsed
+      ? this.setState({ collapsed: false })
+      : this.setState({ collapsed: true });
   }
 
   render() {
