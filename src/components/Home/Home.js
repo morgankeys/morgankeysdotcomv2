@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./home.css";
 import BulletPoints from "./../../assets/content/bulletPoints";
 import StoryPanel from "./../StoryPanel/StoryPanel";
+import * as design from "./../../styles/design-system";
 
 const Headline = props => {
   return (
