@@ -90,11 +90,11 @@ a {
 
     &:hover,
     &:hover:visited {
-      color: #cf3232;
+      color: $red;
     }
 
     &:active {
-      color: #0088ff;
+      color: $blue;
       user-select: none;
     }
 
@@ -149,11 +149,11 @@ a {
 
     &:hover,
     &:hover:visited {
-      color: #cf3232;
+      color: $red;
     }
 
     &:active {
-      color: #0088ff;
+      color: $blue;
       user-select: none;
     }
 
