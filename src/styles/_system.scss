@@ -1,6 +1,6 @@
 //TODO: Remember to delete unused fonts
-$font-display: "Markazi Text", "Constantia", serif; //400,500,600,700
-$font-body: "Lato", "Raleway", sans-serif; //100,300,400,700,900
+$font-display: "Markazi Text", "Lora", "Georgia", serif; //400,500,600,700
+$font-body: "Lato", sans-serif; //100,300,400,700,900
 
 $golden-ratio: 1.61803399;
 
@@ -17,6 +17,11 @@ $blue: #0088ff;
 
 $gray4: #757575;
 
+$g90: #1a1a1a;
+$g75: #404040;
+$g55: #737373;
+$g05: #e5e5e5;
+
 * {
   cursor: default;
 }
@@ -30,6 +35,26 @@ a {
     color: $blue;
     user-select: none;
   }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-display;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+p,
+div,
+span,
+ul,
+ol,
+li {
+  font-family: $font-body;
+  font-weight: 300;
+  line-height: 1.3;
 }
 
 @function spacer($multiplier: 1) {
@@ -54,23 +79,20 @@ a {
 }
 
 @media (min-width: $break-mobile) {
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: $font-display;
-    font-weight: 700;
-  }
-
   h1 {
-    font-size: 56px;
-    line-height: 48px;
+    font-size: 72px;
+    line-height: 1;
+    margin: 0;
   }
   h2 {
-    font-size: 38px;
+    font-size: 56px;
+    line-height: 1;
+    margin: 0;
   }
   h3 {
-    font-size: 32px;
+    font-size: 40px;
+    line-height: 1;
+    margin: 0;
   }
 
   p,
@@ -79,13 +101,12 @@ a {
   ul,
   ol,
   li {
-    font-family: $font-body;
-    font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 18px;
   }
 
   a.subtle {
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
 
     &:hover,
@@ -112,24 +133,20 @@ a {
 }
 
 @media (max-width: $break-mobile) {
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: $font-display;
-    font-weight: 700;
-  }
-
   h1 {
-    font-size: 48px;
-    line-height: 40px;
+    font-size: 56px;
+    line-height: 1;
+    margin: 0;
   }
   h2 {
-    font-size: 38px;
+    font-size: 40px;
+    line-height: 1;
+    margin: 0;
   }
   h3 {
-    font-size: 24px;
-    // line-height: 18px;
+    font-size: 36px;
+    line-height: 1;
+    margin: 0;
   }
 
   p,
@@ -138,13 +155,12 @@ a {
   ul,
   ol,
   li {
-    font-family: $font-body;
-    font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
+    margin-bottom: 16px;
   }
 
   a.subtle {
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
 
     &:hover,
