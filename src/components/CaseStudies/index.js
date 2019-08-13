@@ -2,6 +2,8 @@ import React from "react";
 
 import styled, { css } from "styled-components";
 
+//Images
+import ogLogo from "./../../assets/images/og-logo.svg";
 import heroImage from "./og-coa/0-hero-image@2x.png";
 import financeDirector from "./og-coa/1-finance-director@2x.png";
 import opengovReport from "./og-coa/2-opengov-report@2x.png";
@@ -16,21 +18,6 @@ import alpha from "./og-coa/10-alpha@2x.png";
 import filters from "./og-coa/11-filters@2x.png";
 import finalScreenshot from "./og-coa/12-final screenshot@2x.png";
 
-const Section = styled.section`
-  display: flex;
-  justify-content: center;
-  padding: 0 16px;
-  margin-bottom: 112px;
-  width: 100%;
-  flex-wrap: wrap;
-
-  ${props =>
-    props.alternate &&
-    css`
-      flex-direction: row-reverse;
-    `}
-`;
-
 const system = {
   breakpoints: {
     small: "24em",
@@ -40,69 +27,96 @@ const system = {
   }
 };
 
+
+const CaseStudyContainer = styled.div`
+  display: flex;
+  justify-content: align-items;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 16px;
+`
+
+const HeroSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+`
+
+const Headline = styled.h1`
+  margin-bottom: 48px;
+  text-align: center;
+`
+
+const Section = styled.section`
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 112px;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 1200px;
+
+  ${props =>
+    props.alternate &&
+    css`
+      flex-direction: row-reverse;
+    `}
+`
+
+const Text = styled.div`
+  padding-top: 24px;
+  min-width: 300px;
+  max-width: 510px;
+`
+
 const ImageContainer = styled.div`
-  padding: 16px;
+  padding-top: 24px;
   display: flex;
   justify-content: center;
   align-items: start;
   height: auto;
+  width: 100%;
+  max-width: 510px;
 
-  @media (min-width: ${system.breakpoints.small}) {
-    width: 510px;
-  }
-`;
+`
 
 const Img = styled.img`
   object-fit: contain;
-  min-width: 300px;
 
     ${props => {
-      if (props.maxWidth) {
-        return css`
+    if (props.maxWidth) {
+      return css`
           max-width: ${props.maxWidth}px;
         `;
-      } else {
-        return css`
-          max-width: 510px;
+    } else {
+      return css`
+          max-width: 100%;
         `;
-      }
-    }};
-`;
+    }
+  }};
+`
 
-const Text = styled.div`
-  padding: 16px;
-  margin: 0 30px 0 30px;
-  max-width: 510px;
-  min-width:300px;
-`;
+const Logo = styled(Img)`
+  margin-top: 80px;
+  margin-bottom: 40px;
+`
 
-const Headline = styled.h1`
-  margin-bottom: 48px;
-`;
+const HeroImg = styled(Img)`
+    margin-bottom: 128px;
+    width: 100%;
+`
+
+
 
 const CaseStudies = props => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "start",
-        alignItems: "start",
-        flexDirection: "column",
-        width: "100%",
-        position: "absolute",
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0,
-        overflow: "scroll"
-      }}
-    >
-      <Section>
-        <div>
-          <Headline>OpenGov Chart of Accounts Manager</Headline>
-          <Img src={heroImage} maxWidth={870} />
-        </div>
-      </Section>
+    <CaseStudyContainer>
+      <HeroSection>
+        <Logo src={ogLogo} maxWidth={120} />
+        <Headline>OpenGov Chart of Accounts Manager</Headline>
+        <HeroImg src={heroImage} maxWidth={870} />
+      </HeroSection>
       <Section>
         <Text>
           <h3>Public servants</h3>
@@ -226,7 +240,7 @@ const CaseStudies = props => {
           <Img src={terry} maxWidth={330} />
         </ImageContainer>
       </Section>
-      <Section>
+      <Section alternate>
         <Text>
           <h3>Becoming an expert</h3>
           <p>
@@ -277,7 +291,7 @@ const CaseStudies = props => {
           <Img src={earlyConcept} />
         </ImageContainer>
       </Section>
-      <Section>
+      <Section alternate>
         <Text>
           <h3>Back to the drawing board</h3>
           <p>
@@ -320,7 +334,7 @@ const CaseStudies = props => {
           <Img src={slotMachine} />
         </ImageContainer>
       </Section>
-      <Section>
+      <Section alternate>
         <Text>
           <h3>Usability testing</h3>
           <p>
@@ -375,7 +389,7 @@ const CaseStudies = props => {
           <Img src={filters} />
         </ImageContainer>
       </Section>
-      <Section>
+      <Section alternate>
         <Text>
           <h3>Impact</h3>
           <p>
@@ -409,9 +423,9 @@ const CaseStudies = props => {
         </ImageContainer>
       </Section>
       <footer>
-        <p>Morgan Keys</p>
+        <p>Morgan Keys | Summer 2019</p>
       </footer>
-    </div>
+    </CaseStudyContainer>
   );
 };
 

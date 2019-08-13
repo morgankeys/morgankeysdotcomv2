@@ -96,7 +96,6 @@ li {
   }
 
   p,
-  div,
   span,
   ul,
   ol,
@@ -134,7 +133,7 @@ li {
 
 @media (max-width: $break-mobile) {
   h1 {
-    font-size: 56px;
+    font-size: 48px;
     line-height: 1;
     margin: 0;
   }
@@ -150,12 +149,11 @@ li {
   }
 
   p,
-  div,
   span,
   ul,
   ol,
   li {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 16px;
   }
 
