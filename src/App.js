@@ -7,12 +7,13 @@ import CaseStudies from "./components/CaseStudies";
 
 class App extends Component {
   render() {
-    return <Router>
-        <Route path="/" exact component={Home} />
-        <Route path="/case-studies" exact component={CaseStudies} />
-      </Router>;
+    return (
+        <Router>
+          <Route path="/" exact component={Home} />
+          <Route path="/case-studies" exact component={CaseStudies} />
+        </Router>
+    );
   }
 }
 
 export default App;
-

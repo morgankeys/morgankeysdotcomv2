@@ -3,6 +3,9 @@ import "./home.css";
 import BulletPoints from "./../../assets/content/bulletPoints";
 import StoryPanel from "./../StoryPanel/StoryPanel";
 
+import styled, { css } from 'styled-components'
+
+
 const Headline = props => {
   return (
     <div className="headline">
@@ -15,7 +18,7 @@ const Headline = props => {
         </p>
         <p>
           <a className="cta-link" onClick={props.onClickLetsGo}>
-            Let's do it »
+            Take a look
           </a>
         </p>
       </div>
