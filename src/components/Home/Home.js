@@ -1,92 +1,65 @@
 import React, { Component } from "react";
-import "./home.css";
 import BulletPoints from "./../../assets/content/bulletPoints";
 import StoryPanel from "./../StoryPanel/StoryPanel";
 
 import styled, { css } from 'styled-components'
 
+import system from "../../styles/system.js"
 
-const Headline = props => {
+import HeroBeachImage from "./../../assets/images/hero-image-beach.png"
+
+
+const HomeContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  object-fit: cover;
+  background: right / cover no-repeat url(${HeroBeachImage});
+  display: flex;
+`
+const WelcomeText = styled.div`
+  color: white;
+  padding: 32px;
+  max-width: 600px;
+`
+
+const Blurb = styled.p`
+  font-size: 24px
+  margin-top: 8px;
+
+  @media (max-width: ${system.breakpoints.small}) {
+    font-size: 18px
+  }
+`
+const CTA = styled.a`
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+
+  @media (max-width: ${system.breakpoints.small}) {
+    font-size: 18px
+  }
+
+  &:visited {
+    color: white;
+    text-decoration: none;
+  }
+`
+
+const Home = props => {
   return (
-    <div className="headline">
-      <div className="text-block">
-        <h1>Hi, I'm Morgan.</h1>
-        <p>
-          I’m a product designer who loves decision science, design
-          technologies, and people. Most of all, people. Take a look around and
-          then let’s chat.
-        </p>
-        <p>
-          <a className="cta-link" onClick={props.onClickLetsGo}>
-            Take a look
-          </a>
-        </p>
-      </div>
-    </div>
-  );
-};
+    <HomeContainer>
+      <WelcomeText>
+        <h1>Hi, I'm Morgan</h1>
+        <Blurb>I’m a product designer who loves decision science, design technologies, and people. Most of all, people.</Blurb>
+        <CTA href="/case-studies">View case-studies »</CTA>
+      </WelcomeText>
+    </HomeContainer>
 
-const Avatar = props => {
-  return <div className="avatar" onClick={props.onClick} />;
-};
-
-const CoverPage = props => {
-  return (
-    <div className="cover-page">
-      <Avatar onClick={props.reset} />
-      <Headline onClickLetsGo={props.setCollapsed} />
-      <div className="name-and-bullets">
-        <h2>Morgan Keys</h2>
-        <div>
-          <a
-            className="subtle"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/@morgankeys"
-          >
-            @morgankeys
-          </a>
-        </div>
-        <div className="bullet-points">
-          {BulletPoints.map((bullet, index) => {
-            return <p key={index}>{bullet}</p>;
-          })}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      collapsed: true
-    };
-    this.setCollapsed = this.setCollapsed.bind(this);
-    this.reset = this.reset.bind(this);
-  }
-
-  setCollapsed() {
-    this.setState({ collapsed: false });
-  }
-
-  reset() {
-    this.state.collapsed
-      ? this.setState({ collapsed: false })
-      : this.setState({ collapsed: true });
-  }
-
-  render() {
-    const appClass = this.state.collapsed ? "home" : "home collapsed";
-
-    return (
-      <div className={appClass}>
-        <CoverPage setCollapsed={this.setCollapsed} reset={this.reset} />
-        {this.state.collapsed ? null : <StoryPanel />}
-      </div>
-    );
-  }
+  )
 }
 
 export default Home;
