@@ -3,111 +3,34 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 //Images
-import ogLogo from "./../../assets/images/og-logo.svg";
-import heroImage from "./og-coa/0-hero-image@2x.png";
-import financeDirector from "./og-coa/1-finance-director@2x.png";
-import opengovReport from "./og-coa/2-opengov-report@2x.png";
-import animalTaxonomy from "./og-coa/3-animal-taxonomy@2x.png";
-import oldCoaEditor from "./og-coa/4-old-coa-editor@2x.png";
-import terry from "./og-coa/5-terry@2x.png";
-import diagrams from "./og-coa/6-diagrams@2x.png";
-import earlyConcept from "./og-coa/7-early-concept@2x.png";
-import artifact from "./og-coa/8-artifact@2x.png";
-import slotMachine from "./og-coa/9-slot-machine@2x.png";
-import alpha from "./og-coa/10-alpha@2x.png";
-import filters from "./og-coa/11-filters@2x.png";
-import finalScreenshot from "./og-coa/12-final screenshot@2x.png";
+import ogLogo from "./../../assets/images/og-logo.png"
+import heroImage from "./../../assets/images/og-coa/0-hero-image@2x.png"
+import financeDirector from "./../../assets/images/og-coa/1-finance-director@2x.png"
+import opengovReport from "./../../assets/images/og-coa/2-opengov-report@2x.png"
+import animalTaxonomy from "./../../assets/images/og-coa/3-animal-taxonomy@2x.png"
+import oldCoaEditor from "./../../assets/images/og-coa/4-old-coa-editor@2x.png"
+import terry from "./../../assets/images/og-coa/5-terry@2x.png"
+import diagrams from "./../../assets/images/og-coa/6-diagrams@2x.png"
+import earlyConcept from "./../../assets/images/og-coa/7-early-concept@2x.png"
+import artifact from "./../../assets/images/og-coa/8-artifact@2x.png"
+import slotMachine from "./../../assets/images/og-coa/9-slot-machine@2x.png"
+import alpha from "./../../assets/images/og-coa/10-alpha@2x.png"
+import filters from "./../../assets/images/og-coa/11-filters@2x.png"
+import finalScreenshot from "./../../assets/images/og-coa/12-final screenshot@2x.png"
 
-const system = {
-  breakpoints: {
-    small: "24em",
-    medium: "36em",
-    large: "48em",
-    xl: "60em"
-  }
-};
-
-
-const CaseStudyContainer = styled.div`
-  display: flex;
-  justify-content: align-items;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 16px;
-`
-
-const HeroSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-`
-
-const Headline = styled.h1`
-  margin-bottom: 48px;
-  text-align: center;
-`
-
-const Section = styled.section`
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 112px;
-  width: 100%;
-  flex-wrap: wrap;
-  max-width: 1200px;
-
-  ${props =>
-    props.alternate &&
-    css`
-      flex-direction: row-reverse;
-    `}
-`
-
-const Text = styled.div`
-  padding-top: 24px;
-  min-width: 300px;
-  max-width: 510px;
-`
-
-const ImageContainer = styled.div`
-  padding-top: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  height: auto;
-  width: 100%;
-  max-width: 510px;
-
-`
-
-const Img = styled.img`
-  object-fit: contain;
-
-    ${props => {
-    if (props.maxWidth) {
-      return css`
-          max-width: ${props.maxWidth}px;
-        `;
-    } else {
-      return css`
-          max-width: 100%;
-        `;
-    }
-  }};
-`
-
-const Logo = styled(Img)`
-  margin-top: 80px;
-  margin-bottom: 40px;
-`
-
-const HeroImg = styled(Img)`
-    margin-bottom: 128px;
-    width: 100%;
-`
-
-
+//Styled-components
+import {
+  CaseStudyContainer,
+  HeroSection,
+  Headline,
+  Section,
+  Text,
+  ImageContainer,
+  Img,
+  Logo,
+  HeroImg,
+  CaseStudyFooter
+} from "./components"
 
 const CaseStudies = props => {
   return (
@@ -422,9 +345,9 @@ const CaseStudies = props => {
           <Img src={finalScreenshot} />
         </ImageContainer>
       </Section>
-      <footer>
+      <CaseStudyFooter>
         <p>Morgan Keys | Summer 2019</p>
-      </footer>
+      </CaseStudyFooter>
     </CaseStudyContainer>
   );
 };
