@@ -32,7 +32,7 @@ import {
   CaseStudyFooter
 } from "./components"
 
-const CaseStudies = props => {
+const OGCOACaseStudy = props => {
   return (
     <CaseStudyContainer>
       <HeroSection>
@@ -352,4 +352,4 @@ const CaseStudies = props => {
   );
 };
 
-export default CaseStudies;
+export default OGCOACaseStudy;

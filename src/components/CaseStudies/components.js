@@ -7,8 +7,12 @@ export const CaseStudyContainer = styled.div`
   justify-content: align-items;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   padding: 0 16px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 `
 
 export const HeroSection = styled.div`
