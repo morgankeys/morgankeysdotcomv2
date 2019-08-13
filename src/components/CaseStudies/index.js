@@ -51,7 +51,7 @@ const CaseStudyIndex = props => {
       <h1>Case studies</h1>
       <List>
         <li><a href="/bc-design-systems">Design Systems at BuildingConnected</a></li>
-        <li><a href="/bc-client-suggetions">Client Suggestions at BuildingConnected</a></li>
+        <li><a href="/bc-client-suggestions">Client Suggestions at BuildingConnected</a></li>
         <li><a href="/og-coa">OpenGov Chart of Accounts Manager</a></li>
       </List>
     </CaseStudyList>
