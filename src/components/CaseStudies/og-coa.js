@@ -18,6 +18,7 @@ import finalScreenshot from "./../../assets/images/og-coa/12-final screenshot@2x
 
 //Styled-components
 import {
+  Navigation,
   CaseStudyContainer,
   HeroSection,
   Headline,
@@ -33,6 +34,7 @@ import {
 const OGCOACaseStudy = props => {
   return (
     <CaseStudyContainer>
+      <Navigation />
       <HeroSection>
         <Logo src={ogLogo} maxWidth={120} />
         <Headline>OpenGov Chart of Accounts Manager</Headline>

@@ -16,6 +16,7 @@ import Summary from "./../../assets/images/bc-client-suggestions/8-bc-logo@2x.pn
 
 //Styled-components
 import {
+  Navigation,
   CaseStudyContainer,
   HeroSection,
   Headline,
@@ -31,6 +32,7 @@ import {
 const BCClientSuggestionsCaseStudy = props => {
   return (
     <CaseStudyContainer>
+      <Navigation />
       <HeroSection>
         <Logo src={BCLogo} maxWidth={120} />
         <Headline>Client Suggestions at BuildingConnected</Headline>

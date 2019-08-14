@@ -1,14 +1,80 @@
+import React from "react";
+
 import styled, { css } from "styled-components";
 
 import system from "../../styles/system.js"
+
+import BackIcon from "./../../assets/icons/back-arrow.svg"
+
+const NavHeight = "56px"
+
+const NavBar = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: ${NavHeight};
+  border-bottom: 1px solid ${system.colors.g05};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  background-color: white;
+
+  h1 {
+    font-size: 32px;
+
+    @media (max-width: ${system.breakpoints.small}) {
+      font-size: 24px;
+    }
+  }
+
+  a {
+    height: 32px;
+    object-fit: cover;
+    position: absolute;
+    left: 16px;
+    cursor: pointer;
+
+    @media (max-width: ${system.breakpoints.small}) {
+      height: 24px;
+    }
+
+    img {
+      height: 32px;
+      cursor: pointer;
+
+      @media (max-width: ${system.breakpoints.small}) {
+        height: 24px;
+      }
+    }
+
+
+  }
+`
+export const Navigation = props => {
+  return (
+    <NavBar>
+      <a href="/case-studies"><img src={BackIcon} /></a>
+      <h1>Morgan Keys</h1>
+    </NavBar>
+  )
+}
+
+{/* <div>
+<ul>
+  <li><a href="/bc-design-systems">Design Systems at BuildingConnected</a></li>
+  <li><a href="/bc-client-suggestions">Client Suggestions at BuildingConnected</a></li>
+  <li><a href="/og-coa">OpenGov Chart of Accounts Manager</a></li>
+</ul>
+</div> */}
 
 export const CaseStudyContainer = styled.div`
   display: flex;
   justify-content: align-items;
   align-items: center;
   flex-direction: column;
-  padding: 0 16px;
-
+  padding: ${NavHeight} 16px 0 16px;
   position: absolute;
   top: 0;
   left: 0;
