@@ -15,8 +15,6 @@ $break-tablet: 768px;
 $red: #cf3232;
 $blue: #0088ff;
 
-$gray4: #757575;
-
 $g90: #1a1a1a;
 $g75: #404040;
 $g55: #737373;
@@ -28,11 +26,13 @@ $g05: #e5e5e5;
 
 a {
   cursor: pointer;
+  color: $g90;
+
   &:hover {
-    color: $red;
+    text-decoration: underline;
   }
   &:active {
-    color: $blue;
+    color: $red;
     user-select: none;
   }
 }
@@ -62,27 +62,6 @@ li {
   margin-bottom: 16px
 }
 
-@function spacer($multiplier: 1) {
-  @return $multiplier * 8px;
-}
-
-@function zindex($type, $step) {
-  @if $type == "overlay" {
-    @return 1000 + $step;
-  }
-  @if $type == "modal" {
-    @return 800 + $step;
-  }
-  @if $type == "content" {
-    @return 100 + $step;
-  }
-  @if $type == "background" {
-    @return -100 + $step;
-  } @else {
-    @return 0 + $step;
-  }
-}
-
 @media (min-width: $break-mobile) {
   h1 {
     font-size: 72px;
@@ -105,26 +84,6 @@ li {
   {
     font-size: 18px;
     margin-bottom: 18px;
-  }
-
-  a.subtle {
-    font-size: 18px;
-    text-decoration: none;
-
-    &:hover,
-    &:hover:visited {
-      color: #cf3232;
-    }
-
-    &:active {
-      color: #0088ff;
-      user-select: none;
-    }
-
-    &:visited {
-      color: unset;
-      text-decoration: none;
-    }
   }
 
   .cta-link {
@@ -156,26 +115,6 @@ li {
   {
     font-size: 18px;
     margin-bottom: 16px;
-  }
-
-  a.subtle {
-    font-size: 18px;
-    text-decoration: none;
-
-    &:hover,
-    &:hover:visited {
-      color: #cf3232;
-    }
-
-    &:active {
-      color: #0088ff;
-      user-select: none;
-    }
-
-    &:visited {
-      color: unset;
-      text-decoration: none;
-    }
   }
 
   .cta-link {
