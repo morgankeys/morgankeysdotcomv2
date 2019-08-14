@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
-import "./styles/App.css";
 import Home from "./components/Home/Home";
 import CaseStudiesIndex from "./components/CaseStudies/";
 import BCDS from "./components/CaseStudies/bcds";
