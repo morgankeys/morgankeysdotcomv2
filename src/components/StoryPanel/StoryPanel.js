@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-// import "./../../styles/home.css";
-import "./story-panel.css";
+
 import {
   storyImages,
   OGChartOfAccounts,
