@@ -38,6 +38,7 @@ const CTA = styled.a`
   font-size: 24px;
   font-weight: 600;
   text-decoration: none;
+  color: white;
 
   @media (max-width: ${system.breakpoints.small}) {
     font-size: 18px
