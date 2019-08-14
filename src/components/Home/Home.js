@@ -1,12 +1,13 @@
-import React, { Component } from "react";
-import BulletPoints from "./../../assets/content/bulletPoints";
-import StoryPanel from "./../StoryPanel/StoryPanel";
+import React from "react"
+// import BulletPoints from "./../../assets/content/bulletPoints"
 
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 import system from "../../styles/system.js"
 
 import HeroBeachImage from "./../../assets/images/hero-image-beach.png"
+
+import "./../../styles/system.scss"
 
 
 const HomeContainer = styled.div`
