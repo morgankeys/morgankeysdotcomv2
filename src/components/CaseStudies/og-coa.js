@@ -1,7 +1,5 @@
 import React from "react";
 
-import styled, { css } from "styled-components";
-
 //Images
 import ogLogo from "./../../assets/images/og-logo.png"
 import heroImage from "./../../assets/images/og-coa/0-hero-image@2x.png"
@@ -64,24 +62,9 @@ const OGCOACaseStudy = props => {
       <Section alternate>
         <Text>
           <h3>Financial transparency</h3>
-          <p>
-            A chart of accounts is a long-standing, esoteric accounting tool,
-            but it is essentially a series of taxonomies. Thus, an easy analogy
-            for the average person would be the classification of animals: just
-            as scientists place an animal into groups, one for each level,
-            accountants do the same for transactions.
-          </p>
-          <p>
-            The difference in accounting, though, is that they use multiple
-            taxonomies for each transaction and the structure can vary from one
-            organization to another, or even based on the kind of report.
-          </p>
-          <p>
-            A small government might use three taxonomies, each with 2-3 levels.
-            But more sophisticated govenernments could have 4-5 taxonomies, with
-            up to six-levels. We often saw charts that tracked tens of thousands
-            of types.
-          </p>
+          <p>Local governments upload large amounts of data to OpenGov on a quarterly or monthly basis and then use the platform to share interactive reports both internally and publically, with the citizens they serve.</p>
+          <p>Due to the complexity of financial data, the usefulness and accuracy of these reports is heavily dependent on the way data is categorized. Sophisticated categorization schemes are created in enterprise resource planning systems and must be mirrored in OpenGov.</p>
+          <p>The categorization scheme for an organization is referred to as a “chart of accounts”.</p>
         </Text>
         <ImageContainer>
           <Img src={opengovReport} />
@@ -89,7 +72,7 @@ const OGCOACaseStudy = props => {
       </Section>
       <Section>
         <Text>
-          <h3>The legacy solution</h3>
+          <h3>Taxonomies</h3>
           <p>
             A chart of accounts is a long-standing, esoteric accounting tool,
             but it is essentially a series of taxonomies. Thus, an easy analogy

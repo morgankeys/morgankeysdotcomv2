@@ -1,7 +1,5 @@
 import React from "react";
 
-import styled, { css } from "styled-components";
-
 //Images
 import BCLogo from "./../../assets/images/bc-logo.svg"
 
@@ -133,11 +131,6 @@ const BCClientSuggestionsCaseStudy = props => {
           <Img src={Summary} maxWidth={200}/>
         </ImageContainer>
       </Section>
-
-
-
-
-
       <CaseStudyFooter>
         <p>Morgan Keys | Summer 2019</p>
       </CaseStudyFooter>

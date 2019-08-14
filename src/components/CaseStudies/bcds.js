@@ -1,23 +1,6 @@
 import React from "react";
 
-import styled, { css } from "styled-components";
-
 //Images
-// import ogLogo from "./../../assets/images/og-logo.png"
-// import heroImage from "./../../assets/images/og-coa/0-hero-image@2x.png"
-// import financeDirector from "./../../assets/images/og-coa/1-finance-director@2x.png"
-// import opengovReport from "./../../assets/images/og-coa/2-opengov-report@2x.png"
-// import animalTaxonomy from "./../../assets/images/og-coa/3-animal-taxonomy@2x.png"
-// import oldCoaEditor from "./../../assets/images/og-coa/4-old-coa-editor@2x.png"
-// import terry from "./../../assets/images/og-coa/5-terry@2x.png"
-// import diagrams from "./../../assets/images/og-coa/6-diagrams@2x.png"
-// import earlyConcept from "./../../assets/images/og-coa/7-early-concept@2x.png"
-// import artifact from "./../../assets/images/og-coa/8-artifact@2x.png"
-// import slotMachine from "./../../assets/images/og-coa/9-slot-machine@2x.png"
-// import alpha from "./../../assets/images/og-coa/10-alpha@2x.png"
-// import filters from "./../../assets/images/og-coa/11-filters@2x.png"
-// import finalScreenshot from "./../../assets/images/og-coa/12-final screenshot@2x.png"
-
 import BCLogo from "./../../assets/images/bc-logo.svg"
 
 import BCDSHero from "./../../assets/images/bcds/0-bcds-hero@2x.png"
