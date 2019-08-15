@@ -18,6 +18,7 @@ import Summary from "./../../assets/images/bcds/10-bc-logo@2x.png"
 
 //Styled-components
 import {
+  Navigation,
   CaseStudyContainer,
   HeroSection,
   Headline,
@@ -33,6 +34,7 @@ import {
 const BCDSCaseStudy = props => {
   return (
     <CaseStudyContainer>
+      <Navigation />
       <HeroSection>
         <Logo src={BCLogo} maxWidth={120} />
         <Headline>Design Systems at BuildingConnected</Headline>
