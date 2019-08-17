@@ -35,20 +35,9 @@ const NavBar = styled.div`
     position: absolute;
     left: 16px;
     cursor: pointer;
-    // font-size: 32px;
 
     @media (max-width: ${system.breakpoints.small}) {
       height: 24px;
-      // font-size: 32px;
-    }
-
-    img {
-      height: 32px;
-      cursor: pointer;
-
-      @media (max-width: ${system.breakpoints.small}) {
-        height: 24px;
-      }
     }
   }
 `
@@ -56,6 +45,7 @@ const NavBar = styled.div`
 const StyledBackIcon = styled(BackIcon)`
   cursor: pointer;
   fill: ${system.colors.g90};
+  height: 32px;
 
   &:hover, &:active {
     fill: ${system.colors.red}
