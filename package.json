@@ -14,8 +14,9 @@
   "scripts": {
     "start": "react-scripts start",
     "start-dev": "npm-run-all -p start-js",
-    "build-js": "react-scripts build",
     "build": "npm-run-all build-js",
+    "build-icons": "npx @svgr/cli --icon -d src/assets/icons/ src/assets/icons/svgs",
+    "build-js": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
