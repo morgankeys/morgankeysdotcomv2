@@ -28,7 +28,7 @@ const WelcomeText = styled.div`
 `
 
 const Blurb = styled.p`
-  font-size: 24px
+  font-size: 18px
   margin-top: 8px;
 
   @media (max-width: ${system.breakpoints.small}) {
@@ -36,18 +36,16 @@ const Blurb = styled.p`
   }
 `
 const CTA = styled.a`
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 18px;
   text-decoration: none;
   color: white;
-
-  @media (max-width: ${system.breakpoints.small}) {
-    font-size: 18px
-  }
 
   &:visited {
     color: white;
     text-decoration: none;
+  }
+  &:active {
+    color: ${system.colors.red}
   }
 `
 
