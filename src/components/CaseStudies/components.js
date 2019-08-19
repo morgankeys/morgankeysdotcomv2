@@ -117,6 +117,16 @@ export const Text = styled.div`
   padding-top: 24px;
   min-width: 300px;
   max-width: 510px;
+
+  h3 {
+    color: ${system.colors.g90}
+  }
+  
+  ul,li, p {
+    color: ${system.colors.g75}
+  }
+
+
 `
 
 export const ImageContainer = styled.div`

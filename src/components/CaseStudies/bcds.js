@@ -44,7 +44,7 @@ const BCDSCaseStudy = props => {
         <Text>
           <h3>BuildingConnected</h3>
           <p>BuildingConnected is a platform for bidding on commercial construction projects. I joined in the summer of 2017, working on the subcontractor product.</p>
-          <p>Our focus was helping “subs” manage an influx of invitations from general contractors looking for estimates from qualified candidates.</p>
+          <p>Our focus was helping “subs” manage the influx of invitations from general contractors looking for cost estimates.</p>
         </Text>
         <ImageContainer>
           <Img src={BCOverview} />
@@ -97,7 +97,7 @@ const BCDSCaseStudy = props => {
         <Text>
           <h3>Focusing on impact</h3>
           <p>Some design system projects aim to define the UI from the ground up. But with a narrow mandate, and given BuildingConnected’s preferece for the immediate, I made a conscious decision to focus on tools and integration as opposed to reinventing styles and patterns.</p>
-          <p>Working closely with my engineering counterpart, I began to rebuild our Sketch symbols with built-in standards and chose a series of tools to version the symbols and start synchronizing with code components.</p>
+          <p>I began to rebuild our Sketch symbols with built-in standards and started versioning these assets. Working closely with engineering, I recommended a tool for automatically generating documentation from our component library and together we launched an internal site. We then shared these resources with other teams as a source-of-truth, which they quickly adopted.</p>
         </Text>
         <ImageContainer>
           <Img src={DesignTools} />
@@ -106,7 +106,7 @@ const BCDSCaseStudy = props => {
       <Section>
         <Text>
           <h3>Creating a common language</h3>
-          <p>Historically, confusion would arise if a designer selected a symbol override that engineering had not foreseen. Just because you could easily combine two things in Sketch, didn’t mean that was easy to build. And without semantic guidelines on either side, styling logic became random and confusing.</p>
+          <p>Historically, confusion would arise if a designer selected a symbol override that engineering had not foreseen. Just because you could easily combine two things in Sketch, didn’t mean that it was easy to build. And without semantic guidelines on either side, styling logic became random and confusing.</p>
           <p>I carefully built symbols with naming-patterns and overrides that would imply usage. I then encouraged engineering to build in similar patterns in the API.</p>
         </Text>
         <ImageContainer>
@@ -116,9 +116,8 @@ const BCDSCaseStudy = props => {
       <Section alternate>
         <Text>
           <h3>Initial work and impact</h3>
-          <p>By September, I had committed hundreds of symbols into a versioned “UI Kit”. Other deliverables included:</p>
+          <p>By September, I had committed hundreds of symbols into a versioned “UI Kit” for designers. Other deliverables included:</p>
           <ul>
-            <li>A style guide website generated from code</li>
             <li>Documentation for new components with usage guidelines</li>
             <li>Standardized naming and usage patterns for colors</li>
             <li>Tools to programmatically generate colors for interaction states</li>
