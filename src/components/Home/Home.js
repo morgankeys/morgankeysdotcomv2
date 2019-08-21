@@ -39,7 +39,6 @@ const CTA = styled.a`
   font-size: 18px;
   text-decoration: none;
   color: white;
-  font-weight: 400;
 
   &:visited {
     color: white;
