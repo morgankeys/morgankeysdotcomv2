@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/build
+# /build - Don't ignore so that I can deploy! Maybe find a different way later...
 
 # misc
 .DS_Store
