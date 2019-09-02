@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
-import Home from "./components/Home/Home";
-import CaseStudiesIndex from "./components/CaseStudies/";
-import BCDS from "./components/CaseStudies/bcds";
-import BCClientSuggestions from "./components/CaseStudies/bc-client-suggestions";
-import OGCoa from "./components/CaseStudies/og-coa";
+import Home from "./sections/Home/Home";
+import CaseStudiesIndex from "./sections/CaseStudies/";
+import BCDS from "./sections/CaseStudies/bcds";
+import BCClientSuggestions from "./sections/CaseStudies/bc-client-suggestions";
+import OGCoa from "./sections/CaseStudies/og-coa";
 
 class App extends Component {
   render() {

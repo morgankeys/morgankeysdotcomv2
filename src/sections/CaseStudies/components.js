@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 
 import system from "../../styles/system.js"
 
-import BackIcon from "./../../assets/icons/ArrowLeft"
+import BackIcon from "./../../components/back-icon"
 
 const NavHeight = "56px"
 
@@ -42,25 +42,10 @@ const NavBar = styled.div`
   }
 `
 
-const StyledBackIcon = styled(BackIcon)`
-  cursor: pointer;
-  fill: ${system.colors.g90};
-  height: 32px;
-
-  &:hover, &:active {
-    fill: ${system.colors.red}
-  }
-
-  @media (max-width: ${system.breakpoints.small}) {
-    height: 24px;
-  }
-`
-
-
 export const Navigation = props => {
   return (
     <NavBar>
-      <a href="/case-studies"><StyledBackIcon/></a>
+      <a href="/case-studies"><BackIcon /></a>
       <h1>Morgan Keys</h1>
     </NavBar>
   )
