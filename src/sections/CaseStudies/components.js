@@ -110,8 +110,6 @@ export const Text = styled.div`
   ul,li, p {
     color: ${system.colors.g75}
   }
-
-
 `
 
 export const ImageContainer = styled.div`
@@ -122,7 +120,6 @@ export const ImageContainer = styled.div`
   height: auto;
   width: 100%;
   max-width: 510px;
-
 `
 
 export const Img = styled.img`

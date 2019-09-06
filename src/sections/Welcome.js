@@ -1,16 +1,12 @@
 import React from "react"
-// import BulletPoints from "./../../assets/content/bulletPoints"
 
 import styled from 'styled-components'
 
-import system from "../../styles/system.js"
+import system from "../styles/system.js"
 
-import HeroBeachImage from "./../../assets/images/hero-image-beach.png"
+import HeroBeachImage from "./../assets/images/hero-image-beach.png"
 
-import "./../../styles/system.scss"
-
-
-const HomeContainer = styled.div`
+const Container = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -50,17 +46,17 @@ const CTA = styled.a`
   }
 `
 
-const Home = props => {
+const Welcome = props => {
   return (
-    <HomeContainer>
+    <Container>
       <WelcomeText>
         <h1>Hi, I'm Morgan</h1>
         <Blurb>I’m a product designer who loves decision science, design technologies, and people. Most of all, people.</Blurb>
         <CTA href="/case-studies">View case-studies »</CTA>
       </WelcomeText>
-    </HomeContainer>
+    </Container>
 
   )
 }
 
-export default Home;
+export default Welcome;
