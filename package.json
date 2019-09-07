@@ -20,7 +20,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy:stage": "npm run build && aws s3 sync build/ s3://staging-aws.morgankeys.com",
-    "deploy:prod": "npm run build && aws s3 sync build/ s3://morgankeys.com",
+    "deploy:prod": "npm run build && aws s3 sync build/ s3://morgankeys.com"
   },
   "browserslist": [
     ">0.2%",
