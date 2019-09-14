@@ -21,7 +21,7 @@ class App extends Component {
           <Route path="/bc-design-systems" exact component={BCDS} />
           <Route path="/bc-client-suggestions" exact component={BCClientSuggestions} />
           <Route path="/og-coa" exact component={OGCoa} />
-          <Route component={Welcome} />
+          <Redirect to="/" />
         </Switch>
       </Router>
     );
