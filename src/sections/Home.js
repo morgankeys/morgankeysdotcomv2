@@ -3,49 +3,7 @@ import styled from 'styled-components'
 
 import system from "../styles/system.js"
 
-import BulletPoints from "./../assets/content/bulletPoints"
-import SplashImage from "./../assets/images/splash-small.png"
-
-const Avatar = styled.div`
-        border-radius: 100px;
-        width: 100px;
-        height: 100px;
-        background: -206px -123px / 500% url("${SplashImage}");
-    `
-
-const CoverPage = props => {
-    let Root = styled.div`
-        padding: 16px;
-        & h3 {
-            color: ${system.colors.g75};
-            font-size: 28px;
-        }
-    `
-    
-    return (
-        <Root>
-            <Avatar />
-            <div>
-                <h3>Morgan Keys</h3>
-                <div>
-                    <a
-                        className="subtle"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://twitter.com/@morgankeys"
-                    >
-                        @morgankeys
-            </a>
-                </div>
-                <div className="bullet-points">
-                    {BulletPoints.map((bullet, index) => {
-                        return <p key={index}>{bullet}</p>;
-                    })}
-                </div>
-            </div>
-        </Root>
-    );
-};
+import AboutMe from "./../components/about-me"
 
 const CaseStudyList = styled.div`
   display: flex;
@@ -88,22 +46,35 @@ const List = styled.ul`
   }
 `
 
+const SideColumn = styled.div`
+    min-width: 300px;
+    width: 300px;
+`
+const MainColumn = styled.div`
+    flex: 3 1 300px;
+`
+
 const CaseStudyIndex = props => {
     let Root = styled.div`
         display: flex;
+        padding: 0 48px;
     `
-    
+
     return (
         <Root>
-            <CoverPage />
-            <CaseStudyList>
-                <h1>Case studies</h1>
-                <List>
-                    <li><a href="/bc-design-systems">Design Systems at BuildingConnected</a></li>
-                    <li><a href="/bc-client-suggestions">Client Suggestions at BuildingConnected</a></li>
-                    <li><a href="/og-coa">OpenGov Chart of Accounts Manager</a></li>
-                </List>
-            </CaseStudyList>
+            <SideColumn>
+                <AboutMe />
+            </SideColumn>
+            <MainColumn>
+                <CaseStudyList>
+                    <h1>Case studies</h1>
+                    <List>
+                        <li><a href="/bc-design-systems">Design Systems at BuildingConnected</a></li>
+                        <li><a href="/bc-client-suggestions">Client Suggestions at BuildingConnected</a></li>
+                        <li><a href="/og-coa">OpenGov Chart of Accounts Manager</a></li>
+                    </List>
+                </CaseStudyList>
+            </MainColumn>
         </Root>
     )
 };

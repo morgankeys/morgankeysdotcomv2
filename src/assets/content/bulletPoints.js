@@ -1,9 +1,10 @@
 const bulletPoints = [
-  "Currently at BuildingConnected. Previously OpenGov, Hightail.",
+  "Currently at BuildingConnected\n (an Autodesk company).", 
+  "Previously OpenGov, Hightail.",
   "Bachelor’s in Math and Creative Writing",
   "Master’s in Human-Computer Interaction, Decision Science",
   "Interest in prototyping and design systems",
-  "Interest in designing platforms for social and systemic good"
+  "Interest in applying decision science to design better collaboration and communities"
 ];
 
 export default bulletPoints;
