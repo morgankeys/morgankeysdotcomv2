@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import system from "../styles/system.js"
 
 import BulletPoints from "./../assets/content/bulletPoints"
-import SplashImage from "./../assets/images/splash-small.png"
+import SplashImage from "./../assets/images/hero-image-beach.png"
 
 
 import GHIcon from "./../assets/icons/octicons/mark-github.svg"
@@ -15,7 +15,8 @@ const Avatar = styled.div`
     border-radius: 100px;
     width: 200px;
     height: 200px;
-    background: -308px -193px / 400% url("${SplashImage}");
+    background: ${props => props.positionAndSize} url("${SplashImage}");
+    box-shadow: 0 0 8px 8px rgba(100,100,100,.1);
     `
 
 const SocialIcon = props => {
@@ -82,6 +83,55 @@ const AboutMe = props => {
 
     return (
         <Root>
+            <Avatar positionAndSize="-574px -104px / 391%" />
+            <div>
+                <h3>Morgan Keys</h3>
+                <SocialCluster>
+                    <SocialIcon alt="Link to Twitter profile" icon={TwitterIcon} link="https://twitter.com/@morgankeys" size="32px" />
+                    <SocialIcon alt="Link to GitHub profile" icon={GHIcon} link="https://github.com/morgankeys" size="32px" />
+                    <SocialIcon alt="Link to LinkedIn profile" icon={LIIcon} link="https://github.com/morgankeys" size="32px" />
+                </SocialCluster>
+                <Bullets>
+                    {BulletPoints.map((bullet, index) => {
+                        return <p key={index}>{bullet}</p>;
+                    })}
+                </Bullets>
+            </div>
+        </Root>
+    );
+};
+
+
+const AboutMeSmall = props => {
+    let Root = styled.div`
+        margin-top: 128px;
+
+        h3 {
+            color: ${system.colors.g90};
+            margin-top: 24px;
+        }
+    `
+
+    let SocialCluster = styled.div`
+        display: flex;
+        margin-top: 16px;
+
+        * {
+            margin-right: 24px;
+        }
+    `
+
+    let Bullets = styled.div`
+        margin-top: 32px;
+        
+        p {
+            font-size: 16px;
+            color: ${system.colors.g75};
+        }
+    `
+
+    return (
+        <Root>
             <Avatar />
             <div>
                 <h3>Morgan Keys</h3>
@@ -100,8 +150,7 @@ const AboutMe = props => {
     );
 };
 
+
+
+
 export default AboutMe
-
-
-{/* <p><SocialLink icon={TwitterIcon} link="https://twitter.com/@morgankeys">@morgankeys</SocialLink></p>
-<p><SocialLink icon={GHIcon} link="https://github.com/morgankeys">morgankeys</SocialLink></p> */}

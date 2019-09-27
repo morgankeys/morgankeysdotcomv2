@@ -67,7 +67,7 @@ const CaseStudyIndex = props => {
             </SideColumn>
             <MainColumn>
                 <CaseStudyList>
-                    <h1>Case studies</h1>
+                    <h3>Case studies</h3>
                     <List>
                         <li><a href="/bc-design-systems">Design Systems at BuildingConnected</a></li>
                         <li><a href="/bc-client-suggestions">Client Suggestions at BuildingConnected</a></li>
