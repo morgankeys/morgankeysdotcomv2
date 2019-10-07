@@ -46,7 +46,7 @@ const List = styled.ul`
       }
 
       &:visited {
-        // color: ${system.colors.g30};
+        color: ${system.colors.g30};
       }
 
       &:hover {
