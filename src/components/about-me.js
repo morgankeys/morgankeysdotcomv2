@@ -73,6 +73,8 @@ const SocialCluster = styled.div`
 `
 
 const Bullets = styled.div`
+    margin-top: 32px;
+    
     p {
         font-size: 16px;
         color: ${system.colors.g75};
