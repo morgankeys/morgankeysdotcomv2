@@ -1,28 +1,96 @@
-import React from "react";
+import React from "react"
 
-const storyImages = {
-  og_coa:
-    "http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif",
-  og_network:
-    "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/og_network/network.png",
-  ht_uplink:
-    "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/uplink/uplink_in_browser.png",
-  ht_enterprise:
-    "http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif",
-  ht_usage_report:
-    "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ent_reporting/usageReport_improve_cropped.png",
-  ht_android:
-    "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/hightail_for_android/ht-for-android.png"
-};
+import styled from 'styled-components/macro'
+
+import system from "../../styles/system.js"
+
+// const storyImages = {
+//   og_coa:
+//     "http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif",
+//   og_network:
+//     "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/og_network/network.png",
+//   ht_uplink:
+//     "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/uplink/uplink_in_browser.png",
+//   ht_enterprise:
+//     "http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif",
+//   ht_usage_report:
+//     "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ent_reporting/usageReport_improve_cropped.png",
+//   ht_android:
+//     "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/hightail_for_android/ht-for-android.png"
+// };
+
+import og_coa from './../../assets/images/og-coa/CoA_demo.gif'
+// import og_network from './../images/'
+// import ht_uplink from './../images/'
+// import ht_enterprise from './../images/'
+// import ht_usage_report from './../images/'
+// import ht_android from './../images/'
+
+
+const Story = styled.div`
+  color: ${system.colors.g75};
+  margin: 48px 0 24px;
+  max-width: 580px;
+  
+  * {
+    text-align: left;
+  }
+
+  p, li {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  ul {
+    font-size: 16px;
+    margin-top: 0;
+    padding-inline-start: 18px;
+    width: calc(100% - 18px);
+  }
+
+`
+
+const ImageFrame = styled.div`
+  max-width: 100%;
+  padding: 32px;
+
+  @media (max-width: ${system.breakpoints.large}) {
+    padding: 32px 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 321px;
+    background-color: #fafafa;
+  }
+  
+  img {
+    width: 100%;
+  }
+`
+
+
+const StoryTitle = styled.h3`
+  color: ${system.colors.g90};
+  font-size: 40px;
+  font-family: ${system.fonts.display};
+  width: 100%;
+
+  @media (max-width: ${system.breakpoints.large}) {
+    font-size: 32px;
+  }
+`
 
 const OGChartOfAccounts = () => {
   return (
-    <div id="og_coa">
-      <h3>OpenGov Chart of Accounts Editor</h3>
-      <img
-        alt="OpenGov CoA Editor"
-        src="http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif"
-      />
+    <Story id="og_coa">
+      <StoryTitle>OpenGov Chart of Accounts Editor</StoryTitle>
+      <ImageFrame>
+        <img
+          alt="OpenGov CoA Editor"
+          src={og_coa}
+        />
+      </ImageFrame>
       <p>
         Redesigned a tool for editing financial taxonomies. The tool plays a
         critical role in how users manage their data and is effectively the
@@ -43,18 +111,20 @@ const OGChartOfAccounts = () => {
         </li>
         <li>Contributed code to help refine the UI</li>
       </ul>
-    </div>
+    </Story>
   );
 };
 
 const OGNetwork = () => {
   return (
-    <div id="og_network">
-      <h3>OpenGov Network</h3>
-      <img
-        alt="OpenGov Network"
-        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/og_network/network.png"
-      />
+    <Story id="og_network">
+      <StoryTitle>OpenGov Network</StoryTitle>
+      <ImageFrame>
+        <img
+          alt="OpenGov Network"
+          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/og_network/network.png"
+        />
+      </ImageFrame>
       <p>
         Starting with a simple internal feature-request, I helped develop the
         concept into an entirely new app for the OpenGov platform. It became an
@@ -69,18 +139,20 @@ const OGNetwork = () => {
         </li>
         <li>Designed strategically to leverage other existing platform apps</li>
       </ul>
-    </div>
+    </Story>
   );
 };
 
 const HTUplink = () => {
   return (
-    <div id="ht_uplink">
-      <h3>Hightail Uplink</h3>
-      <img
-        alt="Hightail Uplink"
-        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/uplink/uplink_in_browser.png"
-      />
+    <Story id="ht_uplink">
+      <StoryTitle>Hightail Uplink</StoryTitle>
+      <ImageFrame>
+        <img
+          alt="Hightail Uplink"
+          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/uplink/uplink_in_browser.png"
+        />
+      </ImageFrame>
       <p>
         I advocated giving more attention to a popular yet neglected product and
         eventually was charged with leading a complete redesign (Fall 2013)
@@ -101,24 +173,22 @@ const HTUplink = () => {
           file-sends in the first 3 months)
         </li>
       </ul>
-    </div>
+    </Story>
   );
 };
 
 const HTEnterprise = () => {
   return (
-    <div id="ht_enterpise">
-      <h3>Hightail Enterprise</h3>
-      <div class="video-wrapper">
+    <Story id="ht_enterpise">
+      <StoryTitle>Hightail Enterprise</StoryTitle>
+      <ImageFrame>
         <iframe
           title="Hightail Enterprise"
           src="//player.vimeo.com/video/95018028?title=0&amp;byline=0&amp;portrait=0"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
         />
-      </div>
+      </ImageFrame>
       <p>
         As lead designer for Hightail's enterprise products, I created or
         redesigned many major features and oversaw the implementation of
@@ -129,22 +199,25 @@ const HTEnterprise = () => {
       <p>Major features worked on:</p>
       <ul>
         <li>Reporting, as well as exporting and scheduling of reports</li>
-        <li>Admin dashboard</li> <li>User-group administration</li>
+        <li>Admin dashboard</li>
+        <li>User-group administration</li>
         <li>Admin-policy configuration</li>
         <li>Integrations with SharePoint, SalesForce, IBM, and Netsuite</li>
       </ul>
-    </div>
+    </Story>
   );
 };
 
 const HTUsageReport = () => {
   return (
-    <div id="ht_usage_report">
-      <h3>Hightail Usage Report</h3>
-      <img
-        alt="Hightail Usage Report"
-        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ent_reporting/usageReport_improve_cropped.png"
-      />
+    <Story id="ht_usage_report">
+      <StoryTitle>Hightail Usage Report</StoryTitle>
+      <ImageFrame>
+        <img
+          alt="Hightail Usage Report"
+          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ent_reporting/usageReport_improve_cropped.png"
+        />
+      </ImageFrame>
       <p>
         I concepted and designed an administrative feature for enterprise
         accounts to meet e-discovery requirements. The feature gave admins a
@@ -158,18 +231,20 @@ const HTUsageReport = () => {
         Usage Report was the most advanced feature that Hightail offered and was
         often a highlight of sales demos. (Fall 2012)
       </p>
-    </div>
+    </Story>
   );
 };
 
 const HTAndroid = () => {
   return (
-    <div id="ht_android">
-      <h3>Hightail for Android</h3>
-      <img
-        alt="Hightail for Android"
-        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/hightail_for_android/ht-for-android.png"
-      />
+    <Story id="ht_android">
+      <StoryTitle>Hightail for Android</StoryTitle>
+      <ImageFrame>
+        <img
+          alt="Hightail for Android"
+          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/hightail_for_android/ht-for-android.png"
+        />
+      </ImageFrame>
       <p>
         I worked with classmates to design and prototype a ubiquitous-computing
         experience for the University of Michigan's brand-new North Quad
@@ -180,24 +255,22 @@ const HTAndroid = () => {
         videos. The final prototype featured live QR-codes and semi-responsive
         adaptive text. (Spring 2010)
       </p>
-    </div>
+    </Story>
   );
 };
 
 const GradPIXD = () => {
   return (
-    <div id="grad_pixd">
-      <h3>Pervasive Interaction and Experience Design</h3>
-      <div class="video-wrapper">
+    <Story id="grad_pixd">
+      <StoryTitle>Pervasive Interaction and Experience Design</StoryTitle>
+      <ImageFrame>
         <iframe
           title="Pervasive Interaction and Experience Design"
           src="//player.vimeo.com/video/22869156?title=0&amp;byline=0&amp;portrait=0"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
         />
-      </div>
+      </ImageFrame>
       <p>
         I worked with classmates to design and prototype a ubiquitous-computing
         experience for the University of Michigan’s brand-new North Quad
@@ -208,18 +281,20 @@ const GradPIXD = () => {
         videos. The final prototype featured live QR-codes and semi-responsive
         adaptive text. (Spring 2010)
       </p>
-    </div>
+    </Story>
   );
 };
 
 const YSIUsability = () => {
   return (
-    <div id="ysi_usability">
-      <h3>YouSendIt Usability-Testing</h3>
-      <img
-        alt="YouSendIt Usability-Testing"
-        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ysi_usability/ysi_mobileapp_homepage.png"
-      />
+    <Story id="ysi_usability">
+      <StoryTitle>YouSendIt Usability-Testing</StoryTitle>
+      <ImageFrame>
+        <img
+          alt="YouSendIt Usability-Testing"
+          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ysi_usability/ysi_mobileapp_homepage.png"
+        />
+      </ImageFrame>
       <p>
         As part of a complete redesign of YouSendIt's iOS app, I performed a
         variety of usability tests with no budget. Uncovered frustrating
@@ -238,18 +313,20 @@ const YSIUsability = () => {
           paradigms
         </li>
       </ul>
-    </div>
+    </Story>
   );
 };
 
 const IntelHFE = () => {
   return (
-    <div id="intel_hfe">
-      <h3>Human-Factors Engineering at Intel</h3>
-      <img
-        alt="Human-Factors Engineering at Intel"
-        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/intel/intel_collage.png"
-      />
+    <Story id="intel_hfe">
+      <StoryTitle>Human-Factors Engineering at Intel</StoryTitle>
+      <ImageFrame>
+        <img
+          alt="Human-Factors Engineering at Intel"
+          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/intel/intel_collage.png"
+        />
+      </ImageFrame>
       <p>
         As a Summer Intern with Intel's Human Factors Engineering team, I
         performed a usability study on the "Circuit" web-portal, the home-page
@@ -270,18 +347,20 @@ const IntelHFE = () => {
         </li>
         <li>Designed and lead group participatory-design sessions</li>
       </ul>
-    </div>
+    </Story>
   );
 };
 
 const TCSQualcomm = () => {
   return (
-    <div id="intel_hfe">
-      <h3>Qualcomm Trucking Apps</h3>
-      <img
-        alt="Qualcomm Trucking Apps"
-        src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/tcs/qualcomm.png"
-      />
+    <Story id="intel_hfe">
+      <StoryTitle>Qualcomm Trucking Apps</StoryTitle>
+      <ImageFrame>
+        <img
+          alt="Qualcomm Trucking Apps"
+          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/tcs/qualcomm.png"
+        />
+      </ImageFrame>
       <p>
         As a consultant at Tata Consultancy Services, I worked with Qualcomm to
         design Android versions of two apps from the truck-based Mobile
@@ -303,7 +382,7 @@ const TCSQualcomm = () => {
           tasks.
         </li>
       </ul>
-    </div>
+    </Story>
   );
 };
 
@@ -394,7 +473,6 @@ const TCSQualcomm = () => {
 // };
 
 export {
-  storyImages,
   OGChartOfAccounts,
   OGNetwork,
   HTUplink,

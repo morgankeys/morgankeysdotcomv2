@@ -1,5 +1,5 @@
 import React from "react"
-import styled from 'styled-components'
+import styled, { css } from 'styled-components/macro'
 
 import system from "../styles/system.js"
 
@@ -12,15 +12,19 @@ import TwitterIcon from "./../assets/icons/twitter/Twitter_Social_Icon_Circle_Co
 import LIIcon from "./../assets/icons/linkedin/linkedin-flaticon.svg"
 
 const Avatar = styled.div`
-    border-radius: 100px;
-    width: 200px;
-    height: 200px;
-    background: ${props => props.positionAndSize} url("${SplashImage}");
-    box-shadow: 0 0 8px 8px rgba(100,100,100,.1);
-    `
+    background-image: ${props => `url("${props.imgSrc}")`};
+    background-repeat: no-repeat;
+    border-radius: 10000px;
+    box-shadow: 0 0 4px 4px rgba(100,100,100,.1);
+
+    ${props => props.size && css`
+        width: ${props.size}px;
+        height: ${props.size}px;
+    `}
+`
 
 const SocialIcon = props => {
-    let Root = styled.a`
+    let rootStyles = css`
         cursor: pointer;
         height: ${props.size};
         width: ${props.size};
@@ -36,12 +40,13 @@ const SocialIcon = props => {
     `
 
     return (
-        <Root
+        <a
+            css={rootStyles}
             className="subtle"
             target="_blank"
             rel="noopener noreferrer"
             href={props.link}
-            
+
         >
             <img
                 title={props.alt}
@@ -49,43 +54,86 @@ const SocialIcon = props => {
                 src={props.icon}
                 height={props.size}
                 width={props.size} />
-        </Root>
+        </a>
     )
 }
 
+const SocialCluster = styled.div`
+    display: flex;
+    margin-top: 16px;
+
+    @media (max-width: ${system.breakpoints.large}) {
+        justify-content: space-around;
+    }
+    @media (min-width: ${system.breakpoints.large}) {
+        * {
+            margin-right: 24px;
+        }
+    }
+`
+
+const Bullets = styled.div`
+    p {
+        font-size: 16px;
+        color: ${system.colors.g75};
+        line-height: 1.3
+    }
+`
+
 const AboutMe = props => {
-    let Root = styled.div`
-        margin-top: 128px;
+    let rootStyles = css`
+        @media (max-width: ${system.breakpoints.large}) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 0 40px;
+            width: 100%;
 
-        h3 {
+            ${Avatar} {
+                background-position: 100% 50%;
+                background-size: cover;
+                height: 300px;
+                width: 100vw;
+                border-radius: 0;
+            }
+
+            h1 {
+                font-size: 48px;
+                text-align: center;
+            }
+            
+            ${Bullets} {
+                display: none;
+            }
+        }
+
+        @media (min-width: 992px) {
+            margin-top: 128px;
+
+            position: sticky;
+            top: 128px;
+
+            ${Avatar} {
+                background-position: -574px -104px;
+                background-size: 391%;
+                height: 200px;
+                width: 200px;
+            }
+        }   
+        
+        h1 {
             color: ${system.colors.g90};
+            font-size: 48px;
             margin-top: 24px;
         }
     `
 
-    let SocialCluster = styled.div`
-        display: flex;
-        margin-top: 16px;
-
-        * {
-            margin-right: 24px;
-        }
-    `
-
-    let Bullets = styled.div`
-        margin-top: 32px;
-        
-        p {
-            font-size: 16px;
-            color: ${system.colors.g75};
-        }
-    `
-
     return (
-        <Root>
-            <Avatar positionAndSize="-574px -104px / 391%" />
+        <div css={rootStyles}>
+            <Avatar imgSrc={SplashImage} />
             <div>
-                <h3>Morgan Keys</h3>
+                <h1>Morgan Keys</h1>
                 <SocialCluster>
                     <SocialIcon alt="Link to Twitter profile" icon={TwitterIcon} link="https://twitter.com/@morgankeys" size="32px" />
                     <SocialIcon alt="Link to GitHub profile" icon={GHIcon} link="https://github.com/morgankeys" size="32px" />
@@ -97,60 +145,8 @@ const AboutMe = props => {
                     })}
                 </Bullets>
             </div>
-        </Root>
+        </div>
     );
 };
-
-
-const AboutMeSmall = props => {
-    let Root = styled.div`
-        margin-top: 128px;
-
-        h3 {
-            color: ${system.colors.g90};
-            margin-top: 24px;
-        }
-    `
-
-    let SocialCluster = styled.div`
-        display: flex;
-        margin-top: 16px;
-
-        * {
-            margin-right: 24px;
-        }
-    `
-
-    let Bullets = styled.div`
-        margin-top: 32px;
-        
-        p {
-            font-size: 16px;
-            color: ${system.colors.g75};
-        }
-    `
-
-    return (
-        <Root>
-            <Avatar />
-            <div>
-                <h3>Morgan Keys</h3>
-                <SocialCluster>
-                    <SocialIcon alt="Link to Twitter profile" icon={TwitterIcon} link="https://twitter.com/@morgankeys" size="32px" />
-                    <SocialIcon alt="Link to GitHub profile" icon={GHIcon} link="https://github.com/morgankeys" size="32px" />
-                    <SocialIcon alt="Link to LinkedIn profile" icon={LIIcon} link="https://github.com/morgankeys" size="32px" />
-                </SocialCluster>
-                <Bullets>
-                    {BulletPoints.map((bullet, index) => {
-                        return <p key={index}>{bullet}</p>;
-                    })}
-                </Bullets>
-            </div>
-        </Root>
-    );
-};
-
-
-
 
 export default AboutMe

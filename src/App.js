@@ -15,13 +15,12 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/" exact component={Welcome} />
-          <Route path="/case-studies" exact component={CaseStudiesIndex} />
+          <Route path="/welcome" exact component={Welcome} />
           <Route path="/home" exact component={Home} />
           <Route path="/bc-design-systems" exact component={BCDS} />
           <Route path="/bc-client-suggestions" exact component={BCClientSuggestions} />
           <Route path="/og-coa" exact component={OGCoa} />
-          <Redirect to="/" />
+          <Redirect to="/welcome" />
         </Switch>
       </Router>
     );

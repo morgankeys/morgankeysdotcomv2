@@ -1,6 +1,6 @@
 import React from "react"
 
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 import system from "../styles/system.js"
 
@@ -52,7 +52,7 @@ const Welcome = props => {
       <WelcomeText>
         <h1>Hi, I'm Morgan</h1>
         <Blurb>I’m a product designer who loves decision science, design technologies, and people. Most of all, people.</Blurb>
-        <CTA href="/case-studies">View case-studies »</CTA>
+        <CTA href="/home">View case-studies »</CTA>
       </WelcomeText>
     </Container>
 
