@@ -21,8 +21,7 @@ const system = {
     },
     fonts: {
         display: '"Markazi Text", "Lora", "Georgia", serif',
-        bodyB: '"Lato", sans-serif',
-        body: '"Montserrat", sans-serif',
+        body: '"Lato", sans-serif',
     }
   }
 

@@ -76,7 +76,7 @@ const Bullets = styled.div`
     margin-top: 32px;
     
     p {
-        font-size: 16px;
+        font-size: 18px;
         color: ${system.colors.g75};
         line-height: 1.3
     }

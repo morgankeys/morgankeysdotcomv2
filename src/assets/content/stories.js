@@ -37,12 +37,10 @@ const Story = styled.div`
   }
 
   p, li {
-    font-size: 16px;
     width: 100%;
   }
 
   ul {
-    font-size: 16px;
     margin-top: 0;
     padding-inline-start: 18px;
     width: calc(100% - 18px);

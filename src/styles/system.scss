@@ -1,7 +1,7 @@
 //TODO: Remember to delete unused fonts
 $font-display: "Markazi Text", "Lora", "Georgia", serif; //400,500,600,700
 // $font-body: "Lato", sans-serif; //100,300,400,700,900
-$font-body: "Montserrat", sans-serif; //100,300,400,700,900
+$font-body: "Lato", sans-serif; //100,300,400,700,900
 
 $golden-ratio: 1.61803399;
 
@@ -66,11 +66,11 @@ li {
   font-family: $font-body;
   font-weight: 300;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 li { 
-  margin-bottom: 16px
+  margin-bottom: 18px
 }
 
 @media (min-width: $break-mobile) {
@@ -98,8 +98,8 @@ li {
   p,
   span
   {
-    font-size: 16px;
-    margin-bottom: 16px;
+    font-size: 18px;
+    margin-bottom: 18px;
   }
 
   .cta-link {
@@ -135,7 +135,7 @@ li {
   span
   {
     font-size: 18px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   .cta-link {
