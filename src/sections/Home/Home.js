@@ -1,12 +1,12 @@
 import React from "react"
 import styled, { css } from 'styled-components/macro'
 
-import system from "../styles/system.js"
+import system from "../../styles/system.js"
 
-import AboutMe from "./../components/about-me"
+import AboutMe from "../../components/about-me"
+import CaseStudyList from "./CaseStudyList"
 
 import {
-  storyImages,
   OGChartOfAccounts,
   OGNetwork,
   HTUplink,
@@ -15,49 +15,7 @@ import {
   HTAndroid,
   GradPIXD,
   YSIUsability,
-  TCSQualcomm
-} from "./../assets/content/stories";
-
-const List = styled.ul`
-  font-size: 21px;
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  margin: 32px 0 48px;
-
-  @media (max-width: ${system.breakpoints.large}) {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  li {
-    margin-bottom: 16px;
-
-    a {
-      color: ${system.colors.g90};
-      cursor: pointer;
-      
-      font-size: 20px;
-      font-weight: 300;
-      text-decoration: none;
-
-      @media (max-width: ${system.breakpoints.large}) {
-        font-size: 18px;
-      }
-
-      &:visited {
-        color: ${system.colors.g55};
-      }
-
-      &:hover {
-        color: ${system.colors.blue2};
-        font-weight: 400;
-        // transition: all ease-out .1s;
-
-      }
-    }
-  }
-`
+} from "../../assets/content/stories";
 
 const SideColumn = styled.div`
     min-width: 300px;
@@ -71,7 +29,7 @@ const SideColumn = styled.div`
 const MainColumn = styled.div`
     flex: 3 1 300px;
 
-    div {
+    & >div {
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -128,15 +86,11 @@ const HomePage = props => {
       </SideColumn>
       <MainColumn>
         <div>
-          <h2>Case Studies</h2>
-          <List>
-            <li><a href="/bc-design-systems">Design Systems at BuildingConnected</a></li>
-            <li><a href="/bc-client-suggestions">Client Suggestions at BuildingConnected</a></li>
-            <li><a href="/og-coa">OpenGov Chart of Accounts Manager</a></li>
-          </List>
+          <h2>Recent Case Studies</h2>
+          <CaseStudyList />
         </div>
         <div>
-          <h2>Other Projects</h2>
+          <h2>Older Projects</h2>
           <OGChartOfAccounts />
           <OGNetwork />
           <HTUplink />

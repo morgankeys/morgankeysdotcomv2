@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 
 import Welcome from "./sections/Welcome";
-import Home from "./sections/Home";
-import CaseStudiesIndex from "./sections/CaseStudies/";
+import Home from "./sections/Home/Home";
 import BCDS from "./sections/CaseStudies/bcds";
 import BCClientSuggestions from "./sections/CaseStudies/bc-client-suggestions";
 import OGCoa from "./sections/CaseStudies/og-coa";

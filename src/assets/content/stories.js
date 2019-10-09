@@ -52,11 +52,7 @@ const Story = styled.div`
 
 const ImageFrame = styled.div`
   max-width: 100%;
-  padding: 32px;
-
-  @media (max-width: ${system.breakpoints.large}) {
-    padding: 32px 0;
-  }
+  padding: 32px 0;
 
   iframe {
     width: 100%;
@@ -245,17 +241,10 @@ const HTAndroid = () => {
           src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/hightail_for_android/ht-for-android.png"
         />
       </ImageFrame>
-      <p>
-        I worked with classmates to design and prototype a ubiquitous-computing
-        experience for the University of Michigan's brand-new North Quad
-        Residential complex. We used contextual inquiry and "speed-dating"
-        techniques to understand users and the physical environment. The project
-        required us to design for an ecosystem of wall-displays, smartphones,
-        and web-apps. We presented to community directors and developed concept
-        videos. The final prototype featured live QR-codes and semi-responsive
-        adaptive text. (Spring 2010)
-      </p>
-    </Story>
+      <p>Assisted in the redesign of Hightail's Android app. Worked on the mechanics of shared-folder invites and managing user-permissions as well as file-sending controls. (Spring 2014)</p>
+      <p>Check out the app <a href="https://play.google.com/store/apps/details?id=com.yousendit.android">here</a>.
+      </p >
+    </Story >
   );
 };
 
