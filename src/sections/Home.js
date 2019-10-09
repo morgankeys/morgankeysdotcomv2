@@ -34,7 +34,7 @@ const List = styled.ul`
     margin-bottom: 16px;
 
     a {
-      color: ${system.colors.red};
+      color: ${system.colors.g90};
       cursor: pointer;
       
       font-size: 20px;
@@ -46,11 +46,14 @@ const List = styled.ul`
       }
 
       &:visited {
-        color: ${system.colors.g30};
+        color: ${system.colors.g55};
       }
 
       &:hover {
-        color: ${system.colors.blue}
+        color: ${system.colors.blue2};
+        font-weight: 400;
+        // transition: all ease-out .1s;
+
       }
     }
   }
@@ -77,8 +80,7 @@ const MainColumn = styled.div`
       width: 100%;
     
       h2 {
-        color: ${system.colors.g65};
-        font-weight: 300;
+        color: ${system.colors.hatRed};
         display: inline-block;
         font-size: 32px;
         margin-top: 48px;
@@ -126,7 +128,7 @@ const HomePage = props => {
       </SideColumn>
       <MainColumn>
         <div>
-          <h2>Case studies</h2>
+          <h2>Case Studies</h2>
           <List>
             <li><a href="/bc-design-systems">Design Systems at BuildingConnected</a></li>
             <li><a href="/bc-client-suggestions">Client Suggestions at BuildingConnected</a></li>
@@ -134,7 +136,7 @@ const HomePage = props => {
           </List>
         </div>
         <div>
-          <h2>Other projects</h2>
+          <h2>Other Projects</h2>
           <OGChartOfAccounts />
           <OGNetwork />
           <HTUplink />

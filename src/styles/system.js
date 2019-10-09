@@ -15,6 +15,9 @@ const system = {
         g05: "#e5e5e5",
         red: "#cf3232",
         blue: "#0088ff",
+        hatRed: "#E96550",
+        hatBlue: "#84A3B5",
+        blue2: "#1869af",
     },
     fonts: {
         display: '"Markazi Text", "Lora", "Georgia", serif',
