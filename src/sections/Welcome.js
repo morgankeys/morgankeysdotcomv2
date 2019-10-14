@@ -24,11 +24,11 @@ const WelcomeText = styled.div`
 `
 
 const Blurb = styled.p`
-  font-size: 21px
+  font-size: 21px;
   margin-top: 8px;
 
   @media (max-width: ${system.breakpoints.small}) {
-    font-size: 18px
+    font-size: 18px;
   }
 `
 const CTA = styled.a`
