@@ -4,27 +4,15 @@ import styled from 'styled-components/macro'
 
 import system from "../../styles/system.js"
 
-// const storyImages = {
-//   og_coa:
-//     "http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif",
-//   og_network:
-//     "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/og_network/network.png",
-//   ht_uplink:
-//     "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/uplink/uplink_in_browser.png",
-//   ht_enterprise:
-//     "http://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/coa/CoA_demo.gif",
-//   ht_usage_report:
-//     "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ent_reporting/usageReport_improve_cropped.png",
-//   ht_android:
-//     "https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/hightail_for_android/ht-for-android.png"
-// };
-
 import og_coa from './../../assets/images/og-coa/CoA_demo.gif'
-// import og_network from './../images/'
-// import ht_uplink from './../images/'
-// import ht_enterprise from './../images/'
-// import ht_usage_report from './../images/'
-// import ht_android from './../images/'
+import og_network from './../images/older-projects/network.png'
+import ht_uplink from './../images/older-projects/uplink_in_browser.png'
+import ht_usage_report from './../images/older-projects/usageReport_improve_cropped.png'
+import ht_android from './../images/older-projects/ht-for-android.png'
+import ysi_usability from './../images/older-projects/ysi_mobileapp_homepage.png'
+import intel_HFE from './../images/older-projects/intel_collage.png'
+import tcs_qualcomm from './../images/older-projects/qualcomm.png'
+
 
 
 const Story = styled.div`
@@ -116,7 +104,7 @@ const OGNetwork = () => {
       <ImageFrame>
         <img
           alt="OpenGov Network"
-          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/og_network/network.png"
+          src={og_network}
         />
       </ImageFrame>
       <p>
@@ -144,7 +132,7 @@ const HTUplink = () => {
       <ImageFrame>
         <img
           alt="Hightail Uplink"
-          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/uplink/uplink_in_browser.png"
+          src={ht_uplink}
         />
       </ImageFrame>
       <p>
@@ -209,7 +197,7 @@ const HTUsageReport = () => {
       <ImageFrame>
         <img
           alt="Hightail Usage Report"
-          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ent_reporting/usageReport_improve_cropped.png"
+          src={ht_usage_report}
         />
       </ImageFrame>
       <p>
@@ -236,7 +224,7 @@ const HTAndroid = () => {
       <ImageFrame>
         <img
           alt="Hightail for Android"
-          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/hightail_for_android/ht-for-android.png"
+          src={ht_android}
         />
       </ImageFrame>
       <p>Assisted in the redesign of Hightail's Android app. Worked on the mechanics of shared-folder invites and managing user-permissions as well as file-sending controls. (Spring 2014)</p>
@@ -279,7 +267,7 @@ const YSIUsability = () => {
       <ImageFrame>
         <img
           alt="YouSendIt Usability-Testing"
-          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/ysi_usability/ysi_mobileapp_homepage.png"
+          src={ysi_usability}
         />
       </ImageFrame>
       <p>
@@ -311,7 +299,7 @@ const IntelHFE = () => {
       <ImageFrame>
         <img
           alt="Human-Factors Engineering at Intel"
-          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/intel/intel_collage.png"
+          src={intel_HFE}
         />
       </ImageFrame>
       <p>
@@ -345,7 +333,7 @@ const TCSQualcomm = () => {
       <ImageFrame>
         <img
           alt="Qualcomm Trucking Apps"
-          src="https://s3-us-west-1.amazonaws.com/morgankeysdotcom-assets/imgs/tcs/qualcomm.png"
+          src={tcs_qualcomm}
         />
       </ImageFrame>
       <p>
@@ -364,7 +352,7 @@ const TCSQualcomm = () => {
           to meet safety requirements.
         </li>
         <li>
-          Fleet Visibility: A tracking app that gave drivers an overview of
+          Fleet Visibility: A tracking app that gave drivers an overview of{}
           their trip plan, including designated drops, fuel stops, and other
           tasks.
         </li>

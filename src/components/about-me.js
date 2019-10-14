@@ -15,7 +15,7 @@ const Avatar = styled.div`
     background-image: ${props => `url("${props.imgSrc}")`};
     background-repeat: no-repeat;
     border-radius: 10000px;
-    box-shadow: 0 0 4px 4px rgba(100,100,100,.1);
+    box-shadow: ${system.shadows.drop};
 
     ${props => props.size && css`
         width: ${props.size}px;

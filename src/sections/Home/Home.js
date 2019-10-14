@@ -37,13 +37,6 @@ const MainColumn = styled.div`
       text-align: center;
       width: 100%;
     
-      h2 {
-        color: ${system.colors.hatRed};
-        display: inline-block;
-        font-size: 32px;
-        margin-top: 48px;
-        width: 100%;
-      }
     }
 
     @media (max-width: ${system.breakpoints.large}) {
@@ -79,6 +72,21 @@ const HomePage = props => {
         }
     `
 
+  const SectionHeader = styled.div`
+    border-bottom: 1px solid ${system.colors.hatRed};
+    margin-top: 48px;
+    padding-bottom: 16px;
+
+    h2 {
+        color: ${system.colors.g90};
+        display: inline-block;
+        font-size: 24px;
+        font-family: ${system.fonts.display};
+        width: 100%;
+        overflow: visible;
+      }
+  `
+
   return (
     <div css={rootStyles}>
       <SideColumn>
@@ -86,12 +94,15 @@ const HomePage = props => {
       </SideColumn>
       <MainColumn>
         <div>
-          <h2>Recent Case Studies</h2>
+          <SectionHeader>
+            <h2>Recent Case Studies</h2>
+          </SectionHeader>
           <CaseStudyList />
         </div>
         <div>
-          <h2>Older Projects</h2>
-          <OGChartOfAccounts />
+          <SectionHeader>
+            <h2>Older Projects</h2>
+          </SectionHeader>
           <OGNetwork />
           <HTUplink />
           <HTEnterprise />
@@ -101,8 +112,8 @@ const HomePage = props => {
           <YSIUsability />
         </div>
         <Footer>
-        <p>Last updated, Fall 2019</p>
-      </Footer>
+          <p>Last updated, Fall 2019</p>
+        </Footer>
       </MainColumn>
     </div>
   )

@@ -22,6 +22,9 @@ const system = {
     fonts: {
         display: '"Markazi Text", "Lora", "Georgia", serif',
         body: '"Lato", sans-serif',
+    },
+    shadows: {
+        drop: "0 0 4px 4px rgba(100,100,100,.1)",
     }
   }
 
