@@ -24,7 +24,7 @@ const WelcomeText = styled.div`
 `
 
 const Blurb = styled.p`
-  font-size: 18px
+  font-size: 21px
   margin-top: 8px;
 
   @media (max-width: ${system.breakpoints.small}) {
@@ -32,7 +32,7 @@ const Blurb = styled.p`
   }
 `
 const CTA = styled.a`
-  font-size: 18px;
+  font-size: 21px;
   text-decoration: none;
   color: white;
   font-weight: 400;
