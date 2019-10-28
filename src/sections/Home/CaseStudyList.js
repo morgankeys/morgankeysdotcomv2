@@ -48,8 +48,8 @@ const List = styled.ul`
     }
 
     a > div {
-        align-items: flex-start;
-        align-content: flex-start;
+        align-items: center;
+        align-content: center;
         color: ${system.colors.g90};
         cursor: pointer;
         display: flex;
@@ -61,23 +61,15 @@ const List = styled.ul`
         text-align: left;
 
         h3 {
-          font-size: 18px;
-
-          font-family: ${system.fonts.body};
-          font-weight: 400;
+          font-size: 28px;
+          font-family: ${system.fonts.display};
           line-height: 1.2;
-
-          @media (max-width: ${system.breakpoints.medium}) {
-            font-size: 18px;
-          }
+          cursor: pointer;
         }
         p { 
-          font-size: 16px;
+          font-size: 18px;
           margin: 0;
-
-          @media (max-width: ${system.breakpoints.medium}) {
-            font-size: 16px;
-          }
+          cursor: pointer;
         }
 
       

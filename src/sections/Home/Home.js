@@ -7,7 +7,6 @@ import AboutMe from "../../components/about-me"
 import CaseStudyList from "./CaseStudyList"
 
 import {
-  OGChartOfAccounts,
   OGNetwork,
   HTUplink,
   HTEnterprise,
@@ -15,6 +14,7 @@ import {
   HTAndroid,
   GradPIXD,
   YSIUsability,
+  IntelHFE,
 } from "../../assets/content/stories";
 
 const SideColumn = styled.div`
@@ -71,13 +71,13 @@ const HomePage = props => {
         padding: 0 48px;
 
         @media (max-width: ${system.breakpoints.large}) {
-          padding: 0 24px;
+          padding: 0 16px;
         }
     `
 
   const SectionHeader = styled.div`
-    border-bottom: 1px solid ${system.colors.hatRed};
-    padding-bottom: 16px;
+    border-bottom: 2px solid ${system.colors.hatRed};
+    padding-bottom: 8px;
 
     @media (min-width: ${system.breakpoints.large}) {
       margin-top: 48px;
@@ -86,8 +86,9 @@ const HomePage = props => {
     h2 {
         color: ${system.colors.g90};
         display: inline-block;
-        font-size: 24px;
-        font-family: ${system.fonts.display};
+        font-size: 18px;
+        font-family: ${system.fonts.body};
+        font-weight: 300;
         width: 100%;
         overflow: visible;
       }
@@ -114,8 +115,7 @@ const HomePage = props => {
           <HTEnterprise />
           <HTUsageReport />
           <HTAndroid />
-          <GradPIXD />
-          <YSIUsability />
+          <YSIUsability />          
         </div>
         <Footer>
           <p>Last updated, Fall 2019</p>

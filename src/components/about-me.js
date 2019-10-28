@@ -116,7 +116,7 @@ const AboutMe = props => {
         @media (min-width: 992px) {
             margin-top: 48px;
             position: sticky;
-            top: -700px;
+            top: -340px;
 
             ${Avatar} {
                 background-position: -574px -104px;

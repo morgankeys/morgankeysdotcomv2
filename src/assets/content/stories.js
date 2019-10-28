@@ -108,17 +108,12 @@ const OGNetwork = () => {
         />
       </ImageFrame>
       <p>
-        Starting with a simple internal feature-request, I helped develop the
-        concept into an entirely new app for the OpenGov platform. It became an
-        internal and customer hit that allowed users to experience OpenGov in an
-        entirely new way.
+        Designed an experience for users to search for other governments on the OpenGov network. Starting with a simple internal feature-request, I helped develop the concept into an entirely new app for the OpenGov platform. It became an internal and customer hit that allowed users to experience OpenGov in an entirely new way.
       </p>
       <ul>
         <li>Focused long-term platform goals into an MVP</li>
         <li>Sparkline-style charts create a simple yet data-rich experience</li>
-        <li>
-          Focused filtering options based on understanding of user priorities
-        </li>
+        <li>Focused filtering options based on understanding of user priorities</li>
         <li>Designed strategically to leverage other existing platform apps</li>
       </ul>
     </Story>
@@ -136,14 +131,11 @@ const HTUplink = () => {
         />
       </ImageFrame>
       <p>
-        I advocated giving more attention to a popular yet neglected product and
-        eventually was charged with leading a complete redesign (Fall 2013)
+        After advocating for more attention to a popular legacy feature, I was eventually charged with leading a complete redesign of this tool for requesting files. (Fall 2013)
       </p>
       <ul>
         <li>
-          Used user-preferences as qualitative data to examine user needs. This
-          proved more effective than traditional analytics and allowed us to
-          gain early insight without costly user-interviews.
+          Analyzed user-content and usage patterns to gain early insight.
         </li>
         <li>
           Prototyped concepts in html/css/javascript in order to try out
@@ -172,11 +164,7 @@ const HTEnterprise = () => {
         />
       </ImageFrame>
       <p>
-        As lead designer for Hightail's enterprise products, I created or
-        redesigned many major features and oversaw the implementation of
-        integrations by outside contractors. I was also chosen as an official
-        liaison, responsible for communicating needs and promoting Design
-        thinking to the enterprise business unit. (Fall 2011 - Summer 2014)
+        While working on Hightail's enterprise products, I created or redesigned many major features and reviewed the implementation of integrations by outside contractors. I was also responsible for communicating needs and promoting Design thinking to the larger business unit. (Fall 2011 - Summer 2014)
       </p>
       <p>Major features worked on:</p>
       <ul>
@@ -210,7 +198,7 @@ const HTUsageReport = () => {
         console as part of the project.
       </p>
       <p>
-        Usage Report was the most advanced feature that Hightail offered and was
+        Usage Report was the most advanced feature that Hightail offered at the time and was
         often a highlight of sales demos. (Fall 2012)
       </p>
     </Story>
@@ -228,8 +216,6 @@ const HTAndroid = () => {
         />
       </ImageFrame>
       <p>Assisted in the redesign of Hightail's Android app. Worked on the mechanics of shared-folder invites and managing user-permissions as well as file-sending controls. (Spring 2014)</p>
-      <p>Check out the app <a href="https://play.google.com/store/apps/details?id=com.yousendit.android">here</a>.
-      </p >
     </Story >
   );
 };
@@ -247,14 +233,7 @@ const GradPIXD = () => {
         />
       </ImageFrame>
       <p>
-        I worked with classmates to design and prototype a ubiquitous-computing
-        experience for the University of Michigan’s brand-new North Quad
-        Residential complex. We used contextual inquiry and “speed-dating”
-        techniques to understand users and the physical environment. The project
-        required us to design for an ecosystem of wall-displays, smartphones,
-        and web-apps. We presented to community directors and developed concept
-        videos. The final prototype featured live QR-codes and semi-responsive
-        adaptive text. (Spring 2010)
+        One of my favorite projects from grad school: I worked with classmates to design and prototype a ubiquitous-computing experience for the University of Michigan’s brand-new North Quad residential complex. We used contextual inquiry and “speed-dating” research techniques to understand users and the physical environment. The project required us to design for an ecosystem of wall-displays, smartphones, and web-apps. The final prototype featured live QR-codes and semi-responsive adaptive text. We developed concept videos and presented to community directors. (Spring 2010)
       </p>
     </Story>
   );
@@ -271,12 +250,9 @@ const YSIUsability = () => {
         />
       </ImageFrame>
       <p>
-        As part of a complete redesign of YouSendIt's iOS app, I performed a
-        variety of usability tests with no budget. Uncovered frustrating
-        visual-design flaws, allowing the team to redesign before launch.
-        (Summer 2012)
+        As part of a complete redesign of YouSendIt's iOS app, I performed a variety of usability tests with no budget. I uncovered confusion resulting from visual/interaction design choices, allowing the team to redesign before launch. (Summer 2012)
       </p>
-      <p>Tests included: </p>
+      <p>Guerilla testing methods included:</p>
       <ul>
         <li>
           Coffee shop usability surveys: camping out at coffee shops, I exposed
