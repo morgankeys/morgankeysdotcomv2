@@ -20,6 +20,9 @@ import {
 const SideColumn = styled.div`
     min-width: 300px;
     width: 300px;
+    // height: 100vh;
+    // position: sticky;
+    // top: -50%;
 
     @media (max-width: ${system.breakpoints.large}) {
       min-width: unset;
@@ -74,8 +77,11 @@ const HomePage = props => {
 
   const SectionHeader = styled.div`
     border-bottom: 1px solid ${system.colors.hatRed};
-    margin-top: 48px;
     padding-bottom: 16px;
+
+    @media (min-width: ${system.breakpoints.large}) {
+      margin-top: 48px;
+    }
 
     h2 {
         color: ${system.colors.g90};

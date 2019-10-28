@@ -89,15 +89,18 @@ const AboutMe = props => {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 0px 0 40px;
+            margin: 160px 0 40px;
             width: 100%;
 
             ${Avatar} {
-                background-position: 100% 50%;
+                background-position: 100% 40%;
                 background-size: cover;
-                height: 300px;
-                width: 100vw;
+                height: 160px;
                 border-radius: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
             }
 
             h1 {
@@ -111,10 +114,9 @@ const AboutMe = props => {
         }
 
         @media (min-width: 992px) {
-            margin-top: 128px;
-
+            margin-top: 48px;
             position: sticky;
-            top: 128px;
+            top: -700px;
 
             ${Avatar} {
                 background-position: -574px -104px;
