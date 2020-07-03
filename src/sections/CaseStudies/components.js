@@ -6,6 +6,8 @@ import system from "../../styles/system.js"
 
 import BackIcon from "./../../components/back-icon"
 
+import ZoomableImage from "./../../components/zoomable-image"
+
 const NavHeight = "56px"
 
 const NavBar = styled.div`
@@ -104,7 +106,7 @@ export const Text = styled.div`
   }
 `
 
-export const ImageContainer = styled.div`
+const StyledImage = styled.div`
   align-items: start;
   display: flex;
   height: auto;
@@ -112,7 +114,20 @@ export const ImageContainer = styled.div`
   max-width: 510px;
   padding-top: 24px;
   width: 100%;
+  &:focus {
+    outline: none;
+  }
 `
+
+export const ImageContainer = (props) => {
+  return (
+    <ZoomableImage style={{"outline": "none"}}>
+      <StyledImage>
+        {props.children}
+      </StyledImage>
+    </ZoomableImage>
+  )
+}
 
 export const Img = styled.img`
   object-fit: contain;

@@ -2,7 +2,6 @@ import React from "react";
 
 //Images
 import BCLogo from "./../../assets/images/bc-logo.svg"
-
 import CSHero from "./../../assets/images/bc-client-suggestions/0-cs-hero@2x.png"
 import Estimator from "./../../assets/images/bc-client-suggestions/1-estimator@2x.png"
 import WinButLose from "./../../assets/images/bc-client-suggestions/2-win-but-lose@2x.png"
@@ -12,7 +11,6 @@ import ModalMock from "./../../assets/images/bc-client-suggestions/5-modal-mock@
 import OverviewImpact from "./../../assets/images/bc-client-suggestions/6-overview-impact@2x.png"
 import EvolvingProduct from "./../../assets/images/bc-client-suggestions/7-evolving-product@2x.png"
 import Summary from "./../../assets/images/bc-client-suggestions/8-bc-logo@2x.png"
-
 
 //Styled-components
 import {
