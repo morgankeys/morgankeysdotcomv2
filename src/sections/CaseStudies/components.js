@@ -22,6 +22,7 @@ const NavBar = styled.div`
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 1000;
 
   h1 {
     font-size: 32px;
@@ -119,7 +120,7 @@ const StyledImage = styled.div`
   }
 `
 
-export const ImageContainer = (props) => {
+export const ImageContainer = props => {
   return (
     <ZoomableImage style={{"outline": "none"}}>
       <StyledImage>
