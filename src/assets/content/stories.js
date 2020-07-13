@@ -13,6 +13,7 @@ import ysi_usability from './../images/older-projects/ysi_mobileapp_homepage.png
 import intel_HFE from './../images/older-projects/intel_collage.png'
 import tcs_qualcomm from './../images/older-projects/qualcomm.png'
 
+import ZoomableImage from "../../components/zoomable-image"
 
 
 const Story = styled.div`
@@ -36,7 +37,7 @@ const Story = styled.div`
 
 `
 
-const ImageFrame = styled.div`
+const StyledImageFrame = styled.div`
   max-width: 100%;
   padding: 32px 0;
 
@@ -50,6 +51,16 @@ const ImageFrame = styled.div`
     width: 100%;
   }
 `
+
+const ImageFrame = props => {
+  return (
+    <ZoomableImage>
+      <StyledImageFrame>
+        {props.children}
+      </StyledImageFrame>
+    </ZoomableImage>
+  )
+}
 
 
 const StoryTitle = styled.h3`
