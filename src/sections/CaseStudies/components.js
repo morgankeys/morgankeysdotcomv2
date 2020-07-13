@@ -86,6 +86,19 @@ export const Section = styled.section`
   max-width: 1200px;
   width: 100%;
 
+  //Hack to override outlines for react-medium-image-zoom
+  [data-rmiz-wrap="visible"],
+  [data-rmiz-wrap="hidden"],
+  [data-rmiz-wrap="hidden"],
+  [data-rmiz-overlay],
+  [data-rmiz-btn-open],
+  [data-rmiz-btn-close],
+  [data-rmiz-btn-open],
+  [data-rmiz-btn-close],
+  [data-rmiz-modal-content] {
+    outline: none;
+  }
+
   ${props =>
     props.alternate &&
     css`
@@ -115,9 +128,7 @@ const StyledImage = styled.div`
   max-width: 510px;
   padding-top: 24px;
   width: 100%;
-  &:focus {
-    outline: none;
-  }
+}
 `
 
 export const ImageContainer = props => {
