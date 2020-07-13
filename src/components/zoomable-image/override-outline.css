@@ -1,0 +1,11 @@
+[data-rmiz-wrap="visible"],
+[data-rmiz-wrap="hidden"],
+[data-rmiz-wrap="hidden"],
+[data-rmiz-overlay],
+[data-rmiz-btn-open],
+[data-rmiz-btn-close],
+[data-rmiz-btn-open],
+[data-rmiz-btn-close],
+[data-rmiz-modal-content] {
+  outline: none;
+}

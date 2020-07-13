@@ -6,7 +6,7 @@ import system from "../../styles/system.js"
 
 import BackIcon from "./../../components/back-icon"
 
-import ZoomableImage from "./../../components/zoomable-image"
+import ZoomableImage from "../../components/zoomable-image"
 
 const NavHeight = "56px"
 
@@ -85,19 +85,6 @@ export const Section = styled.section`
   margin-bottom: 112px;
   max-width: 1200px;
   width: 100%;
-
-  //Hack to override outlines for react-medium-image-zoom
-  [data-rmiz-wrap="visible"],
-  [data-rmiz-wrap="hidden"],
-  [data-rmiz-wrap="hidden"],
-  [data-rmiz-overlay],
-  [data-rmiz-btn-open],
-  [data-rmiz-btn-close],
-  [data-rmiz-btn-open],
-  [data-rmiz-btn-close],
-  [data-rmiz-modal-content] {
-    outline: none;
-  }
 
   ${props =>
     props.alternate &&
