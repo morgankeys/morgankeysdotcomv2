@@ -62,6 +62,14 @@ const ImageFrame = props => {
   )
 }
 
+const VideoFrame = props => {
+  return (
+    <StyledImageFrame>
+      {props.children}
+    </StyledImageFrame>
+  )
+}
+
 
 const StoryTitle = styled.h3`
   color: ${system.colors.g90};
@@ -166,14 +174,14 @@ const HTEnterprise = () => {
   return (
     <Story id="ht_enterpise">
       <StoryTitle>Hightail Enterprise</StoryTitle>
-      <ImageFrame>
+      <VideoFrame>
         <iframe
           title="Hightail Enterprise"
           src="//player.vimeo.com/video/95018028?title=0&amp;byline=0&amp;portrait=0"
           frameBorder="0"
           allowFullScreen
         />
-      </ImageFrame>
+      </VideoFrame>
       <p>
         While working on Hightail's enterprise products, I created or redesigned many major features and reviewed the implementation of integrations by outside contractors. I was also responsible for communicating needs and promoting Design thinking to the larger business unit. (Fall 2011 - Summer 2014)
       </p>
