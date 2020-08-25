@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 
 import system from "../../styles/system.js"
 
+import adsk from "./../../assets/images/autodesk-id/thumbnail.png"
 import bcds from "./../../assets/images/bcds/0-bcds-hero@2x.png"
 import bc_suggestions from "./../../assets/images/bc-client-suggestions/0-cs-hero@2x.png"
 import og_coa from './../../assets/images/og-coa/CoA_demo.gif'
@@ -85,10 +86,10 @@ const CaseStudyList = props => {
       <li>
         <a href="/autodesk-id">
           <div>
-            <img src={bcds} />
+            <img src={adsk} />
             <div>
               <h3>Autodesk ID</h3>
-              <p>at Autodesk</p>
+              <p>Leading a complex initiative</p>
             </div>
           </div>
         </a>
@@ -99,7 +100,7 @@ const CaseStudyList = props => {
             <img src={bcds} />
             <div>
               <h3>Design Systems</h3>
-              <p>at BuildingConnected</p>
+              <p>Design technology</p>
             </div>
           </div>
         </a>
@@ -110,7 +111,7 @@ const CaseStudyList = props => {
             <img src={bc_suggestions} />
             <div>
               <h3>Client Suggestions </h3>
-              <p>at BuildingConnected</p>
+              <p>User engagement and prototyping</p>
             </div>
           </div>
         </a>
@@ -121,7 +122,7 @@ const CaseStudyList = props => {
             <img src={og_coa} />
             <div>
               <h3>Chart of Accounts Manager </h3>
-              <p>at OpenGov</p>
+              <p>Patented user interface</p>
             </div>
           </div>
         </a>

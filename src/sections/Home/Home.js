@@ -76,7 +76,7 @@ const HomePage = props => {
     `
 
   const SectionHeader = styled.div`
-    border-bottom: 2px solid ${system.colors.hatRed};
+    border-bottom: 1px solid ${system.colors.g05};
     padding-bottom: 8px;
 
     @media (min-width: ${system.breakpoints.large}) {
@@ -102,7 +102,7 @@ const HomePage = props => {
       <MainColumn>
         <div>
           <SectionHeader>
-            <h2>Recent Case Studies</h2>
+            <h2>Case Studies</h2>
           </SectionHeader>
           <CaseStudyList />
         </div>
