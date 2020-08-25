@@ -309,8 +309,8 @@ const OGCOACaseStudy = props => {
           <p>
             Many users reported moments of delight when trying the new tool.
             They seemed to have small epiphanies, as if to say, “oh, right,
-            that’s how it works”. I suspect, in the world of accounting
-            software, this maybe one of the only tools that is actually fun to
+            that’s how it works”. In the world of accounting
+            software, this may be one of the only tools that is actually fun to
             use.
           </p>
           <p>
@@ -319,7 +319,7 @@ const OGCOACaseStudy = props => {
             opted for a special contract, paying $42,000 for just the Chart of
             Accounts Manager. Second, the novelty of the user interface combined
             with some of the technical achievements in it’s engineering have
-            qualified it for patent consideration—it is currently pending (
+            won OpenGov a patent (
             <a href="https://patents.google.com/patent/US20170270697A1/en">
               US20170270697A1
             </a>

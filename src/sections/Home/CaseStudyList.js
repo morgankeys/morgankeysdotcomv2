@@ -122,7 +122,7 @@ const CaseStudyList = props => {
             <img src={og_coa} />
             <div>
               <h3>Chart of Accounts Manager </h3>
-              <p>Patented user interface</p>
+              <p>A patented user interface</p>
             </div>
           </div>
         </a>

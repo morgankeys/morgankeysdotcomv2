@@ -118,7 +118,7 @@ const HomePage = props => {
           <YSIUsability />          
         </div>
         <Footer>
-          <p>Last updated, Fall 2019</p>
+          <p>Last updated Summer 2020</p>
         </Footer>
       </MainColumn>
     </div>
