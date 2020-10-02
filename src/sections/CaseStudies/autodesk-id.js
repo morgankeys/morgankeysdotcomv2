@@ -5,8 +5,8 @@ import ADSKhero from "./../../assets/images/autodesk-id/hero.png"
 
 
 //Styled-components
+import Navigation from "../../components/navigation"
 import {
-  Navigation,
   CaseStudyContainer,
   HeroSection,
   Headline,

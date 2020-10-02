@@ -1,11 +1,9 @@
 import React from "react";
-
-import styled, { css } from "styled-components/macro";
+import styled, { css } from "styled-components/macro"
 
 import system from "../../styles/system.js"
 
 import BackIcon from "./../../components/back-icon"
-
 import ZoomableImage from "../../components/zoomable-image"
 
 const NavHeight = "56px"

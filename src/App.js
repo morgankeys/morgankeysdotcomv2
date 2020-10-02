@@ -7,6 +7,7 @@ import BCDS from "./sections/CaseStudies/bcds";
 import BCClientSuggestions from "./sections/CaseStudies/bc-client-suggestions";
 import OGCoa from "./sections/CaseStudies/og-coa";
 import AutodeskIDCaseStudy from "./sections/CaseStudies/autodesk-id";
+import OlderProjects from "./sections/OlderProjects/older-projects"
 
 import "./styles/system.scss"
 
@@ -21,7 +22,7 @@ class App extends Component {
           <Route path="/bc-design-systems" exact component={BCDS} />
           <Route path="/bc-client-suggestions" exact component={BCClientSuggestions} />
           <Route path="/og-coa" exact component={OGCoa} />
-          <Route path="/older-projects" exact component={Home} />
+          <Route path="/older-projects" exact component={OlderProjects} />
           <Redirect to="/welcome" />
         </Switch>
       </Router>

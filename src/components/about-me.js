@@ -3,13 +3,21 @@ import styled, { css } from 'styled-components/macro'
 
 import system from "../styles/system.js"
 
-import BulletPoints from "./../assets/content/bulletPoints"
 import SplashImage from "./../assets/images/hero-image-beach.png"
-
 
 import GHIcon from "./../assets/icons/octicons/mark-github.svg"
 import TwitterIcon from "./../assets/icons/twitter/Twitter_Social_Icon_Circle_Color.svg"
 import LIIcon from "./../assets/icons/linkedin/linkedin-flaticon.svg"
+
+const bulletPoints = [
+    "Currently at BuildingConnected\n (an Autodesk company)", 
+    "Previously OpenGov, Hightail",
+    "Master’s in Human-Computer Interaction, Decision Science",
+    "Bachelor’s in Math, Creative Writing",
+    "Interest in prototyping and design systems",
+    "Interest in applying decision science to design better collaboration and communities",
+    "Technologist with React experience"
+  ];
 
 const Avatar = styled.div`
     background-image: ${props => `url("${props.imgSrc}")`};
@@ -144,7 +152,7 @@ const AboutMe = props => {
                     <SocialIcon alt="Link to LinkedIn profile" icon={LIIcon} link="https://github.com/morgankeys" size="32px" />
                 </SocialCluster>
                 <Bullets>
-                    {BulletPoints.map((bullet, index) => {
+                    {bulletPoints.map((bullet, index) => {
                         return <p key={index}>{bullet}</p>;
                     })}
                 </Bullets>

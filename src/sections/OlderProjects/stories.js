@@ -5,13 +5,13 @@ import styled from 'styled-components/macro'
 import system from "../../styles/system.js"
 
 import og_coa from './../../assets/images/og-coa/CoA_demo.gif'
-import og_network from './../images/older-projects/network.png'
-import ht_uplink from './../images/older-projects/uplink_in_browser.png'
-import ht_usage_report from './../images/older-projects/usageReport_improve_cropped.png'
-import ht_android from './../images/older-projects/ht-for-android.png'
-import ysi_usability from './../images/older-projects/ysi_mobileapp_homepage.png'
-import intel_HFE from './../images/older-projects/intel_collage.png'
-import tcs_qualcomm from './../images/older-projects/qualcomm.png'
+import og_network from './../../assets/images/older-projects/network.png'
+import ht_uplink from './../../assets/images/older-projects/uplink_in_browser.png'
+import ht_usage_report from './../../assets/images/older-projects/usageReport_improve_cropped.png'
+import ht_android from './../../assets/images/older-projects/ht-for-android.png'
+import ysi_usability from './../../assets/images/older-projects/ysi_mobileapp_homepage.png'
+import intel_HFE from './../../assets/images/older-projects/intel_collage.png'
+import tcs_qualcomm from './../../assets/images/older-projects/qualcomm.png'
 
 import ZoomableImage from "../../components/zoomable-image"
 
