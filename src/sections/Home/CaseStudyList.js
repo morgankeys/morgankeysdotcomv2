@@ -86,7 +86,7 @@ const CaseStudyList = props => {
       <li>
         <a href="/autodesk-id">
           <div>
-            <img src={adsk} />
+            <img src={adsk} alt="Integrating BuildingConnected with Autodesk"/>
             <div>
               <h3>Autodesk ID</h3>
               <p>Leading a complex initiative</p>
@@ -97,7 +97,7 @@ const CaseStudyList = props => {
       <li>
         <a href="/bc-design-systems">
           <div>
-            <img src={bcds} />
+            <img src={bcds} alt="The BuildingConnected design system" />
             <div>
               <h3>Design Systems</h3>
               <p>Design technology</p>
@@ -108,7 +108,7 @@ const CaseStudyList = props => {
       <li>
         <a href="/bc-client-suggestions">
           <div>
-            <img src={bc_suggestions} />
+            <img src={bc_suggestions} alt="Client Suggestions in BuildingConnected" />
             <div>
               <h3>Client Suggestions </h3>
               <p>User engagement and prototyping</p>
@@ -119,7 +119,7 @@ const CaseStudyList = props => {
       <li>
         <a href="/og-coa">
           <div>
-            <img src={og_coa} />
+            <img src={og_coa} alt="The OpenGov Chart of Accounts Manager" />
             <div>
               <h3>Chart of Accounts Manager </h3>
               <p>A patented user interface</p>
