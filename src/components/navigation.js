@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components/macro"
+import styled from "styled-components/macro"
 
 import system from "../styles/system.js"
 
@@ -42,12 +42,21 @@ const NavBar = styled.div`
   }
 `
 
+const NavContainer = styled.div`
+    display: block;
+    height: ${NavHeight};
+    width: 100vw;
+  
+`
+
 const Navigation = props => {
   return (
-    <NavBar>
-      <a href="/home"><BackIcon /></a>
-      <h1>Morgan Keys</h1>
-    </NavBar>
+    <NavContainer>
+      <NavBar>
+        <a href="/home"><BackIcon /></a>
+        <h1>Morgan Keys</h1>
+      </NavBar>
+    </NavContainer>
   )
 }
 

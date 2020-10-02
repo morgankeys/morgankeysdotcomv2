@@ -17,8 +17,8 @@ import Summary from "./../../assets/images/bcds/10-bc-logo@2x.png"
 
 
 //Styled-components
+import Navigation from "../../components/navigation"
 import {
-  Navigation,
   CaseStudyContainer,
   HeroSection,
   Headline,

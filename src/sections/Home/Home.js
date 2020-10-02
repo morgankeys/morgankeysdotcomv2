@@ -4,8 +4,9 @@ import styled, { css } from 'styled-components/macro'
 import system from "../../styles/system.js"
 
 import AboutMe from "../../components/about-me"
+import SectionHeader from "../../components/section-header"
 import { PageColumn as MainColumn } from "../../components/page-column"
-import CaseStudyList from "./CaseStudyList"
+import CaseStudyList from "./case-study-list"
 
 const SideColumn = styled.div`
     min-width: 300px;
@@ -23,24 +24,34 @@ const Footer = styled.div`
     margin: 96px 0;
 `
 
-const SectionHeader = styled.div`
-  border-bottom: 1px solid ${system.colors.g05};
-  padding-bottom: 8px;
+const OlderProjects = styled.div`
+    margin: 32px;
+    max-width: 440px;
+`
 
-  @media (min-width: ${system.breakpoints.large}) {
-    margin-top: 48px;
-  }
+const CTADiv = styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+`
+const CTAButton = styled.a`
+    background-color: ${system.colors.g90};
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    padding: .66rem;
+    cursor: pointer;
 
-  h2 {
-      color: ${system.colors.g90};
-      display: inline-block;
-      font-size: 18px;
-      font-family: ${system.fonts.body};
-      font-weight: 300;
-      width: 100%;
-      overflow: visible;
+    &:hover{
+      background-color: ${system.colors.hatRed};
+      text-decoration: none;
     }
-  `
+    &:active {
+      color: #fff;
+      background-color: ${system.colors.red};
+    }
+    
+`
 
 const HomePage = props => {
   let rootStyles = css`
@@ -52,8 +63,6 @@ const HomePage = props => {
           padding: 0 16px;
         }
     `
-
-
 
   return (
     <div css={rootStyles}>
@@ -71,9 +80,12 @@ const HomePage = props => {
           <SectionHeader>
             <h2>Older Projects</h2>
           </SectionHeader>
-          <div>
-            <a href="/older-projects">Click here to see older projects.</a>
-          </div>
+          <OlderProjects>
+            Want more? You can also view summaries of my projects from older jobs, internships, and grad school.
+            <CTADiv>
+              <CTAButton href="/older-projects">View older projects</CTAButton>
+            </CTADiv>
+          </OlderProjects>
         </div>
         <Footer>
           <p>Last updated October 2020</p>

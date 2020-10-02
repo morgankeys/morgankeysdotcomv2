@@ -1,10 +1,11 @@
 import React from "react"
-import styled, { css } from 'styled-components/macro'
+import { css } from 'styled-components/macro'
 
 import system from "../../styles/system.js"
 
 import Navigation from "../../components/navigation"
 import {PageColumn} from "../../components/page-column"
+import SectionHeader from "../../components/section-header"
 
 import {
   OGNetwork,
@@ -17,10 +18,11 @@ import {
   IntelHFE,
 } from "./stories";
 
-const HomePage = props => {
+const OlderProjects = props => {
   let rootStyles = css`
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         padding: 0 48px;
         
 
@@ -33,6 +35,9 @@ const HomePage = props => {
     <div css={rootStyles}>
       <Navigation />
       <PageColumn>
+        <SectionHeader>
+          <h2>Older Projects</h2>
+        </SectionHeader>
         <OGNetwork />
         <HTUplink />
         <HTEnterprise />
@@ -46,4 +51,4 @@ const HomePage = props => {
   )
 };
 
-export default HomePage
+export default OlderProjects

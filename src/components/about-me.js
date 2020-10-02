@@ -9,15 +9,17 @@ import GHIcon from "./../assets/icons/octicons/mark-github.svg"
 import TwitterIcon from "./../assets/icons/twitter/Twitter_Social_Icon_Circle_Color.svg"
 import LIIcon from "./../assets/icons/linkedin/linkedin-flaticon.svg"
 
+//Resume: https://www.dropbox.com/s/rjuj8oxr3xipxu3/mkeys-resume-2020.pdf?dl=0
+
 const bulletPoints = [
-    "Currently at BuildingConnected\n (an Autodesk company)", 
-    "Previously OpenGov, Hightail",
+    "Currently at Autodesk",
+    "Previously BuildingConnected, OpenGov, Hightail",
     "Master’s in Human-Computer Interaction, Decision Science",
     "Bachelor’s in Math, Creative Writing",
     "Interest in prototyping and design systems",
     "Interest in applying decision science to design better collaboration and communities",
     "Technologist with React experience"
-  ];
+];
 
 const Avatar = styled.div`
     background-image: ${props => `url("${props.imgSrc}")`};
@@ -151,10 +153,17 @@ const AboutMe = props => {
                     <SocialIcon alt="Link to GitHub profile" icon={GHIcon} link="https://github.com/morgankeys" size="32px" />
                     <SocialIcon alt="Link to LinkedIn profile" icon={LIIcon} link="https://github.com/morgankeys" size="32px" />
                 </SocialCluster>
+
                 <Bullets>
                     {bulletPoints.map((bullet, index) => {
                         return <p key={index}>{bullet}</p>;
                     })}
+                    <a
+                        target="_blank"
+                        href="https://www.dropbox.com/s/rjuj8oxr3xipxu3/mkeys-resume-2020.pdf?dl=0"
+                    >
+                        View resume
+                    </a>
                 </Bullets>
             </div>
         </div>

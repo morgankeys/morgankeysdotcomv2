@@ -13,8 +13,8 @@ import EvolvingProduct from "./../../assets/images/bc-client-suggestions/7-evolv
 import Summary from "./../../assets/images/bc-client-suggestions/8-bc-logo@2x.png"
 
 //Styled-components
+import Navigation from "../../components/navigation"
 import {
-  Navigation,
   CaseStudyContainer,
   HeroSection,
   Headline,

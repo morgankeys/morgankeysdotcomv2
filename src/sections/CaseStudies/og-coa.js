@@ -17,8 +17,8 @@ import filters from "./../../assets/images/og-coa/11-filters@2x.png"
 import finalScreenshot from "./../../assets/images/og-coa/12-final screenshot@2x.png"
 
 //Styled-components
+import Navigation from "../../components/navigation"
 import {
-  Navigation,
   CaseStudyContainer,
   HeroSection,
   Headline,

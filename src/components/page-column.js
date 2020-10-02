@@ -1,8 +1,11 @@
-import styled, { css } from 'styled-components/macro'
+import styled from 'styled-components/macro'
 import system from "../styles/system.js"
 
 export const PageColumn = styled.div`
-    ${props => `flex: ${props.flex};`}
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    ${props => props.flex? `flex: ${props.flex};` : ``}
 
     & >div {
       align-items: center;
@@ -10,13 +13,10 @@ export const PageColumn = styled.div`
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      width: 100%;
-    
     }
 
     @media (max-width: ${system.breakpoints.large}) {
       width: 100%;
-      align-items: start;
 
       div {
         align-items: center;
