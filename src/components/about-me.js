@@ -160,6 +160,7 @@ const AboutMe = props => {
                     })}
                     <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://www.dropbox.com/s/rjuj8oxr3xipxu3/mkeys-resume-2020.pdf?dl=0"
                     >
                         View resume

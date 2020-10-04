@@ -153,7 +153,7 @@ const BCDSCaseStudy = props => {
       <CaseStudyFooter>
         <p>Morgan Keys | Summer 2019</p>
       </CaseStudyFooter>
-    </CaseStudyContainer >
+    </CaseStudyContainer>
   );
 };
 

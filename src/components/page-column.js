@@ -12,7 +12,6 @@ export const PageColumn = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center;
     }
 
     @media (max-width: ${system.breakpoints.large}) {
@@ -20,10 +19,8 @@ export const PageColumn = styled.div`
 
       div {
         align-items: center;
-        text-align: left;
 
         h2 {
-          text-align: center;
           margin-top: 24px;
         }
       }

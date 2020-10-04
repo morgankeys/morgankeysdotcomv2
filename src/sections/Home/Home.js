@@ -5,18 +5,9 @@ import system from "../../styles/system.js"
 
 import AboutMe from "../../components/about-me"
 import SectionHeader from "../../components/section-header"
+import SideColumn from "../../components/side-column"
 import { PageColumn as MainColumn } from "../../components/page-column"
 import CaseStudyList from "./case-study-list"
-
-const SideColumn = styled.div`
-    min-width: 300px;
-    width: 300px;
-
-    @media (max-width: ${system.breakpoints.large}) {
-      min-width: unset;
-      width: 100%;
-    }
-`
 
 const Footer = styled.div`
     color: ${system.colors.g55};
@@ -27,6 +18,7 @@ const Footer = styled.div`
 const OlderProjects = styled.div`
     margin: 32px;
     max-width: 440px;
+    text-align: center;
 `
 
 const CTADiv = styled.div`

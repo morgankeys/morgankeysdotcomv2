@@ -3,10 +3,7 @@ import styled, { css } from "styled-components/macro"
 
 import system from "../../styles/system.js"
 
-import BackIcon from "./../../components/back-icon"
 import ZoomableImage from "../../components/zoomable-image"
-
-const NavHeight = "56px"
 
 export const CaseStudyContainer = styled.div`
   align-items: center;
@@ -14,7 +11,7 @@ export const CaseStudyContainer = styled.div`
   flex-direction: column;
   justify-content: align-items;
   left: 0;
-  padding: ${NavHeight} 16px 0 16px;
+  padding: 0 16px 0 16px;
   position: absolute;
   right: 0;
   top: 0;
@@ -74,11 +71,11 @@ const StyledImage = styled.div`
 
 export const ImageContainer = props => {
   return (
-    <ZoomableImage style={{"outline": "none"}}>
-      <StyledImage>
+    <StyledImage>
+      <ZoomableImage style={{ "outline": "none" }}>
         {props.children}
-      </StyledImage>
-    </ZoomableImage>
+      </ZoomableImage>
+    </StyledImage >
   )
 }
 

@@ -6,6 +6,7 @@ import system from "../../styles/system.js"
 import Navigation from "../../components/navigation"
 import {PageColumn} from "../../components/page-column"
 import SectionHeader from "../../components/section-header"
+// import SideColumn from "../../components/side-column"
 
 import {
   OGNetwork,

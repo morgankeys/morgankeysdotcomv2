@@ -1,4 +1,5 @@
 import React from "react"
+// import { useRef } from "react"
 
 import styled from 'styled-components/macro'
 
@@ -38,7 +39,7 @@ const Story = styled.div`
 `
 
 const StyledImageFrame = styled.div`
-  max-width: 100%;
+  width: 100%;
   padding: 32px 0;
 
   iframe {
@@ -116,9 +117,9 @@ const OGChartOfAccounts = () => {
   );
 };
 
-const OGNetwork = () => {
+const OGNetwork = (props) => {
   return (
-    <Story id="og_network">
+    <Story id={"og_network"}>
       <StoryTitle>OpenGov Network</StoryTitle>
       <ImageFrame>
         <img
@@ -243,14 +244,14 @@ const GradPIXD = () => {
   return (
     <Story id="grad_pixd">
       <StoryTitle>Pervasive Interaction and Experience Design</StoryTitle>
-      <ImageFrame>
+      <VideoFrame>
         <iframe
           title="Pervasive Interaction and Experience Design"
           src="//player.vimeo.com/video/22869156?title=0&amp;byline=0&amp;portrait=0"
           frameBorder="0"
           allowFullScreen
         />
-      </ImageFrame>
+      </VideoFrame>
       <p>
         One of my favorite projects from grad school: I worked with classmates to design and prototype a ubiquitous-computing experience for the University of Michigan’s brand-new North Quad residential complex. We used contextual inquiry and “speed-dating” research techniques to understand users and the physical environment. The project required us to design for an ecosystem of wall-displays, smartphones, and web-apps. The final prototype featured live QR-codes and semi-responsive adaptive text. We developed concept videos and presented to community directors. (Spring 2010)
       </p>
