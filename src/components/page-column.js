@@ -18,7 +18,6 @@ export const PageColumn = styled.div`
       width: 100%;
 
       div {
-        align-items: center;
 
         h2 {
           margin-top: 24px;

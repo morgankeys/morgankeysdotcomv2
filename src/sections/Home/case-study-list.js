@@ -9,8 +9,8 @@ import bc_suggestions from "./../../assets/images/bc-client-suggestions/0-cs-her
 import og_coa from './../../assets/images/og-coa/CoA_demo.gif'
 
 const CaseStudyCardContent = styled.div`
-  align-items: center;
-  align-content: center;
+  align-items: start;
+  align-content: start;
   color: ${system.colors.g90};
   cursor: pointer;
   display: flex;
