@@ -151,7 +151,7 @@ const AboutMe = props => {
                 <SocialCluster>
                     <SocialIcon alt="Link to Twitter profile" icon={TwitterIcon} link="https://twitter.com/@morgankeys" size="32px" />
                     <SocialIcon alt="Link to GitHub profile" icon={GHIcon} link="https://github.com/morgankeys" size="32px" />
-                    <SocialIcon alt="Link to LinkedIn profile" icon={LIIcon} link="https://github.com/morgankeys" size="32px" />
+                    <SocialIcon alt="Link to LinkedIn profile" icon={LIIcon} link="https://www.linkedin.com/in/morgankeys" size="32px" />
                 </SocialCluster>
 
                 <Bullets>
