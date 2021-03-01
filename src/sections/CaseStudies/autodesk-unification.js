@@ -724,7 +724,7 @@ const AutodeskUnificationCaseStudy = (props) => {
               BuildingConnected
             </li>
             <li>
-              Copy on the right comfirms that the user has now joined
+              Copy on the right confirms that the user has now joined
               BuildingConnected and readies them for the standard welcome flow
               which asks them for profile information.
             </li>
