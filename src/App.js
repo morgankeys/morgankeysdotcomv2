@@ -6,7 +6,7 @@ import Home from "./sections/Home/Home";
 import BCDS from "./sections/CaseStudies/bcds";
 import BCClientSuggestions from "./sections/CaseStudies/bc-client-suggestions";
 import OGCoa from "./sections/CaseStudies/og-coa";
-import AutodeskUnificationCaseStudy from "./sections/CaseStudies/autodesk-unification";
+import AutodeskIDCaseStudy from "./sections/CaseStudies/autodesk-unification";
 
 import OlderProjects from "./sections/OlderProjects/older-projects"
 
@@ -19,7 +19,7 @@ class App extends Component {
         <Switch>
           <Route path="/welcome" exact component={Welcome} />
           <Route path="/home" exact component={Home} />
-          <Route path="/autodesk-unification" exact component={AutodeskUnificationCaseStudy} />
+          <Route path="/autodesk-id" exact component={AutodeskIDCaseStudy} />
           <Route path="/bc-design-systems" exact component={BCDS} />
           <Route path="/bc-client-suggestions" exact component={BCClientSuggestions} />
           <Route path="/og-coa" exact component={OGCoa} />

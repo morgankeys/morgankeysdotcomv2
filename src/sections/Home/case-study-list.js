@@ -103,10 +103,10 @@ const CaseStudyList = props => {
     <List>
       <li>
         <CaseStudyCard
-          pageLink="/autodesk-unification"
+          pageLink="/autodesk-id"
           imgSrc={adsk}
           imgAlt="Unification"
-          title="Autodesk Unification"
+          title="Autodesk ID"
           byline="Integrating with a new platform"
         />
       </li>

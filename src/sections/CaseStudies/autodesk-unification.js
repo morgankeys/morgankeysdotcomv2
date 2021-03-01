@@ -134,13 +134,13 @@ export const ImageContainer = (props) => {
   );
 };
 
-const AutodeskUnificationCaseStudy = (props) => {
+const AutodeskIDCaseStudy = (props) => {
   return (
     <CaseStudyContainer>
       <Navigation />
       <HeroSection>
-        <Logo src={ADSKhero} maxWidth={240} />
-        <Headline>Autodesk Unification</Headline>
+        <Logo src={ADSKhero} maxWidth={300} />
+        <Headline>Autodesk ID</Headline>
       </HeroSection>
       <Section>
         <SubSection>
@@ -161,12 +161,12 @@ const AutodeskUnificationCaseStudy = (props) => {
           </p>
         </SubSection>
         <SubSection>
-          <h4>Research Initiative</h4>
+          <h4>Research initiative</h4>
           <p>
             I was assigned a team of Designers, a Product Manager, a Researcher,
-            and an Engineer. I created a project plan and planned multiple
-            design workshops. In consultation with a Sr. Software Architect, I
-            also identified 3 implementation options that would help frame our
+            and an Engineer. I created a project plan and planned design
+            workshops. In consultation with a Sr. Software Architect, I also
+            identified 3 implementation options that would help frame our
             research:
           </p>
           <ThreeImages>
@@ -214,13 +214,13 @@ const AutodeskUnificationCaseStudy = (props) => {
             </div>
           </ThreeImages>
           <p>
-            We knew that something like One Account best resembled the long-term
-            goal of a completely unified Autodesk platform, but it was not clear
-            whether this would be the best experience for our users in the near
-            term. We had differently branded products on different URLs and the
-            inertia of users who were comfortable with their existing workflows.
-            The question was: how might we introduce Autodesk in the most
-            frictionless way possible?
+            We knew that something like <Bold>One Account</Bold> best resembled
+            the long-term goal of a completely unified Autodesk platform, but it
+            was not clear whether this would be the best experience for our
+            users in the near term. We had differently branded products on
+            different URLs and the inertia of users who were comfortable with
+            their existing workflows. The question was: how might we introduce
+            Autodesk in the most frictionless way possible?
           </p>
           <p>
             As a team, we developed three rounds of prototype-testing, exploring
@@ -270,10 +270,10 @@ const AutodeskUnificationCaseStudy = (props) => {
             </li>
           </List>
           <p>
-            With these in mind, we decided to recommend the One Account
-            implementation as a general approach. It would require us to build a
-            potentially disruptive prompt asking users to adopt Autodesk, but it
-            would also be a one-time experience.
+            With these in mind, we decided to recommend the{" "}
+            <Bold>One Account</Bold> implementation as a general approach. It
+            would require us to build a potentially disruptive prompt asking
+            users to adopt Autodesk, but it would also be a one-time experience.
           </p>
           <p>
             Furthermore, BuildingConnected is a freemium, network-driven
@@ -281,8 +281,8 @@ const AutodeskUnificationCaseStudy = (props) => {
             network-quality and ultimately growth, revenue, and user value.
           </p>
           <p>
-            All of this made One Account a clear choice, not just strategically
-            but also from a user experience perspective.
+            All of this made <Bold>One Account</Bold> a clear choice not just
+            strategically but also from a user experience perspective.
           </p>
         </SubSection>
         <SubSection>
@@ -291,9 +291,9 @@ const AutodeskUnificationCaseStudy = (props) => {
             Toward the end of the research cycle, it occured to me that there
             was an opportunity to provide more than just guidance on the
             implementation method. Given that adoption was most likely when
-            paired with yet-to-be-built features, and given that there were
-            various sign-in and sign-up experiences that would need to be
-            updated to support Autodesk ID, what we needed was a plan.
+            paired with new features (yet-to-be-built), and given that there
+            were various sign-in and sign-up experiences that would need to be
+            updated to support Autodesk ID, we needed a plan.
           </p>
           <p>
             For our last synthesis workshop, I focused the team on forming
@@ -356,8 +356,8 @@ const AutodeskUnificationCaseStudy = (props) => {
                 to bid on a project.
               </p>
               <p>
-                General contractors are trying to find quality subcontractors to
-                provide cost estimates and ultimately perform specific
+                General contractors are trying to find quality subcontractors
+                that can provide cost estimates and ultimately perform specific
                 trade-work. They can use BuildingConnected to search for
                 subcontractors, invite them to a project and analyze their
                 proposals. In many cases though, particularly in new markets,
@@ -366,8 +366,11 @@ const AutodeskUnificationCaseStudy = (props) => {
               </p>
               <p>
                 BuildingConnected allows general contractors to invite people
-                via email address and then requires new sign-ups to register
-                their company information, creating a re-enforcing cycle.
+                via email address, but requires the new invitees to sign-up and
+                enter their company information. This creates a reinforcing
+                cycle in which general contractors attract subcontractors who
+                then make the network more valuable for other general
+                contractors and so on.
               </p>
               <p>
                 Thus, it is critical that the sign-up experience remain as
@@ -397,7 +400,7 @@ const AutodeskUnificationCaseStudy = (props) => {
           <Spacer height={18} />
           <p>
             This lander has been live since the early days of the company and
-            while I don’t know the all the reasoning that went into it’s design,
+            while I don’t know all of the reasoning that went into it’s design,
             there are a few key choices we can speculate about:
           </p>
           <List>
@@ -416,8 +419,8 @@ const AutodeskUnificationCaseStudy = (props) => {
               this point.
             </li>
             <li>
-              The lack of a password input adds a natural step during which we
-              can check the email address for several edge-cases
+              The lack of a password input creates a two-step process during
+              which we can check the email address for special cases
             </li>
           </List>
         </SubSection>
@@ -429,8 +432,8 @@ const AutodeskUnificationCaseStudy = (props) => {
             Subcontractors have historically been difficult to engage and they
             may only use BuildingConnected occasionally. When they do visit,
             it’s important that the lander page take every opportunity to help
-            them sign in with the correct account and avoid network-polluting
-            duplicate profiles.
+            them sign in with the correct account and avoid duplicate profiles
+            that pollute our network.
           </p>
           <p>Thus, the page must seamlessly handle:</p>
           <List>
@@ -456,8 +459,7 @@ const AutodeskUnificationCaseStudy = (props) => {
                 effectively a black box from the perspective of our application.
               </p>
               <p>
-                Ultimately, there is a fragmentation and we must add the
-                following use cases to our lander:
+                Ultimately, inserting this flow fragments our use cases such that we must also support:
               </p>
               <List>
                 <li>
@@ -553,18 +555,18 @@ const AutodeskUnificationCaseStudy = (props) => {
         <SubSection>
           <h4>Designing for every scenario</h4>
           <p>
-            To solve for the many scenarios, I took advantage of an existing
+            To solve for all of our scenarios, I took advantage of the existing
             two-step credential input pattern. BuildingConnected historically
             used this pattern to handle users who paid for custom authentication
             (“SSO”)—instead of taking a password from these users, the system
             redirects them to an Identity Provider (“IDP”) hosted by their
             company. This private “IDP” would authenticate the user and redirect
-            them back to BuildingConnected where they would be signed-in to the
+            them back to BuildingConnected where they would be signed in to the
             app. This is used both in the sign-in process but also in the
             sign-up process. In the latter case, the company’s IDP approves the
-            user to be provisioned a new account. (This is also a fairly common
-            pattern used in sites and services that support 3rd-party
-            applications).
+            user to be provisioned a new account. (This two-step interface is also a fairly common
+            pattern used in other sites and services that support 3rd-party
+            authentication).
           </p>
           <ImageContainer>
             <Img src={TwoStep} />
@@ -587,6 +589,7 @@ const AutodeskUnificationCaseStudy = (props) => {
             </li>
             <li>Is this user currently signed-in to their Autodesk ID?</li>
           </List>
+          <Spacer height={18}/>
           <p>
             In the first case, the user has used Autodesk before, but not
             BuildingConnected. We need to create a BuildingConnected account for
@@ -604,9 +607,9 @@ const AutodeskUnificationCaseStudy = (props) => {
           </p>
           <p>
             In the third case, the user has Autodesk ID and is currently signed
-            into Autodesk. For these users, there is no need to send them to an
+            in to Autodesk. For these users, there is no need to send them to an
             Autodesk sign-up or sign-in page. They are already authenticated, we
-            simply need to create a BuildingConnect account for them or let them
+            either need to create a BuildingConnect account for them or simply let them
             into the app.
           </p>
           <p>
@@ -616,6 +619,7 @@ const AutodeskUnificationCaseStudy = (props) => {
           <a href={SimplifiedFlowLarge} target="_blank">
             <ImageLinkOut src={SimplifiedFlow} />
           </a>
+          <Caption>Simplified flow-diagram for the invitation-to-bid sign-up experience</Caption>
           <Spacer height="48" />
           <p>Here are all cases in more granular detail:</p>
           <Columns>
@@ -671,7 +675,7 @@ const AutodeskUnificationCaseStudy = (props) => {
             interesting edge case. Based on a technical implemenation detail, if
             users are currently signed-in to an Autodesk ID account and they
             trigger either a sign-in or sign-up flow, the system will skip past
-            the Autodesk screens and take the user directly the app (or the
+            the Autodesk screens and take the user directly to the app (or the
             welcome flow if it is a new user). Basically, the user is already
             authenticated, so the system does not ask them to sign-in again.
             (However, I did add a momentary “Redirecting to Autodesk...”
@@ -726,11 +730,10 @@ const AutodeskUnificationCaseStudy = (props) => {
             <li>
               Copy on the right confirms that the user has now joined
               BuildingConnected and readies them for the standard welcome flow
-              which asks them for profile information.
             </li>
             <li>
               Subtle “Wrong ID” link allows edge-case users to back out without
-              creating much distraction for our main-case users.
+              creating much distraction for our main-case users
             </li>
           </List>
         </SubSection>
@@ -758,4 +761,4 @@ const AutodeskUnificationCaseStudy = (props) => {
   );
 };
 
-export default AutodeskUnificationCaseStudy;
+export default AutodeskIDCaseStudy;
