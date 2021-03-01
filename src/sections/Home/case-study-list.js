@@ -103,11 +103,11 @@ const CaseStudyList = props => {
     <List>
       <li>
         <CaseStudyCard
-          pageLink="/autodesk-id"
+          pageLink="/autodesk-unification"
           imgSrc={adsk}
-          imgAlt="Integrating BuildingConnected with Autodesk"
-          title="Autodesk ID"
-          byline="Leading a complex initiative"
+          imgAlt="Unification"
+          title="Autodesk Unification"
+          byline="Integrating with a new platform"
         />
       </li>
       <li>
@@ -137,16 +137,6 @@ const CaseStudyList = props => {
           byline="A patented user interface"
         />
       </li>
-      <li>
-        <CaseStudyCard
-          pageLink="/autodesk-unification"
-          imgSrc={adsk}
-          imgAlt="Unification"
-          title="Autodesk Unification"
-          byline="Integrating with a new platform"
-        />
-      </li>
-      
     </List>
   )
 }

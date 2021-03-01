@@ -5,7 +5,6 @@ import ZoomableImage from "../../components/zoomable-image";
 
 //Images
 import ADSKhero from "./../../assets/images/autodesk-id/hero.png";
-
 import ADSKSignIn from "./../../assets/images/autodesk-unification/adsk-sign-in-optimized.png";
 import ADSKUniHero from "./../../assets/images/autodesk-unification/adsk-uni-hero-optimized.png";
 import BiddingProcess from "./../../assets/images/autodesk-unification/bidding-process-optimized.png";
@@ -19,9 +18,9 @@ import PreExistingLander from "./../../assets/images/autodesk-unification/pre-ex
 import LegacyAuthentication from "./../../assets/images/autodesk-unification/legacy-authentication-optimized.png";
 import TwoStep from "./../../assets/images/autodesk-unification/two-step-optimized.png";
 import SimplifiedFlow from "./../../assets/images/autodesk-unification/simplified-flow-optimized.png";
+import SimplifiedFlowLarge from "./../../assets/images/autodesk-unification/simplified-flow.png";
 import SSOFlow from "./../../assets/images/autodesk-unification/SSO-flow-optimized.png";
 import TheSignUPCard from "./../../assets/images/autodesk-unification/the-sign-up-card-optimized.png";
-
 import LinkedAccounts from "./../../assets/images/autodesk-unification/linked-optimized.png";
 import Twins from "./../../assets/images/autodesk-unification/twins-optimized.png";
 import OneAccount from "./../../assets/images/autodesk-unification/one-account-optimized.png";
@@ -70,10 +69,14 @@ const Bold = styled.span`
   font-weight: 700;
 `;
 
-const Caption = styled.span`
-  font-size: 15px;
-  color: ${system.colors.g50};
-  text-align: center;
+const Caption = styled.div`
+  &,
+  * {
+    font-size: 15px;
+    color: ${system.colors.g55};
+    text-align: center;
+    margin: 8px 0;
+  }
 `;
 
 const List = styled.ul`
@@ -88,18 +91,37 @@ const List = styled.ul`
 
 const Columns = styled.span`
   display: flex;
-  div {
-    margin: 0 ${(props) => props.margin || 16}px;
-  }
 `;
 
 const StyledImage = styled.div`
   align-items: start;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   height: auto;
   justify-content: center;
   padding-top: 24px;
+  cursor: pointer;
 }
+`;
+
+const ImageLinkOut = styled(Img)`
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 8px 0 #0000001e;
+  }
+`;
+
+const Spacer = styled.div`
+  ${(props) => {
+    return `
+      height: ${props.height || 0}px; 
+      width: ${props.width || 0}px;
+      max-height: ${props.height || 0}px; 
+      max-width: ${props.width || 0}px;
+      min-height: ${props.height || 0}px; 
+      min-width: ${props.width || 0}px;`;
+  }}
 `;
 
 export const ImageContainer = (props) => {
@@ -117,7 +139,7 @@ const AutodeskUnificationCaseStudy = (props) => {
     <CaseStudyContainer>
       <Navigation />
       <HeroSection>
-        <Logo src={ADSKhero} maxWidth={300} />
+        <Logo src={ADSKhero} maxWidth={240} />
         <Headline>Autodesk Unification</Headline>
       </HeroSection>
       <Section>
@@ -158,7 +180,7 @@ const AutodeskUnificationCaseStudy = (props) => {
                 </p>
                 <p>
                   Users would link an Autodesk account and manage it in their
-                  settings.
+                  settings
                 </p>
               </Caption>
             </div>
@@ -171,8 +193,8 @@ const AutodeskUnificationCaseStudy = (props) => {
                   <Bold>“Twin Credentials”</Bold>
                 </p>
                 <p>
-                  Users could choose which authentication method they preferred,
-                  saving steps if they are already logged in.
+                  Users choose authentication method, saving steps if logged in
+                  to Autodesk
                 </p>
               </Caption>
             </div>
@@ -185,8 +207,8 @@ const AutodeskUnificationCaseStudy = (props) => {
                   <Bold>“One Account”</Bold>
                 </p>
                 <p>
-                  At some point users would create/link an Autodesk account and
-                  that would replace their BuildingConnected account.
+                  Users create/link an Autodesk account which would replace
+                  their BuildingConnected account
                 </p>
               </Caption>
             </div>
@@ -207,7 +229,17 @@ const AutodeskUnificationCaseStudy = (props) => {
             internal users (sales, customer success) and external participants
             (via usertesting.com).
           </p>
-          <Img src={PaperPrototype} />
+          <Spacer height={18} />
+          <div>
+            <ImageContainer>
+              <Img src={PaperPrototype} />
+            </ImageContainer>
+            <Caption>
+              Example of a paper-prototype screen. We mirrored a critical
+              BuildingConnected sign-up flow but used a fake service to reduce
+              bias.
+            </Caption>
+          </div>
         </SubSection>
         <SubSection>
           <h4>Insights</h4>
@@ -299,7 +331,9 @@ const AutodeskUnificationCaseStudy = (props) => {
             The hope was that this sequence would maximize flexibility and
             minimize user frustration.
           </p>
-          <Img src={Roadmap} />
+          <ImageContainer>
+            <Img src={Roadmap} />
+          </ImageContainer>
         </SubSection>
       </Section>
       <Section>
@@ -340,8 +374,11 @@ const AutodeskUnificationCaseStudy = (props) => {
                 friction-less as possible.
               </p>
             </div>
+            <Spacer width={24} />
             <div>
-              <Img src={BiddingProcess} maxWidth={510} />
+              <ImageContainer>
+                <Img src={BiddingProcess} maxWidth={510} />
+              </ImageContainer>
             </div>
           </Columns>
         </SubSection>
@@ -356,6 +393,8 @@ const AutodeskUnificationCaseStudy = (props) => {
           <ImageContainer>
             <Img src={PreExistingLander} maxWidth={1024} />
           </ImageContainer>
+          <Caption>Pre-existing landing page for invitations-to-bid</Caption>
+          <Spacer height={18} />
           <p>
             This lander has been live since the early days of the company and
             while I don’t know the all the reasoning that went into it’s design,
@@ -435,18 +474,28 @@ const AutodeskUnificationCaseStudy = (props) => {
                 </li>
               </List>
             </div>
+            <Spacer width={24} />
             <div>
-              <Img src={ADSKSignIn} maxWidth={510} />
-              <Columns margin={8}>
+              <ImageContainer>
+                <Img src={ADSKSignIn} maxWidth={510} />
+              </ImageContainer>
+              <Columns>
                 <div>
                   <ImageContainer>
                     <Img src={InsertSignUp} maxWidth={218} />
                   </ImageContainer>
+                  <Caption>
+                    Architecture of the One Account implementation
+                  </Caption>
                 </div>
+                <Spacer width={24} />
                 <div>
                   <ImageContainer>
                     <Img src={LegacyAuthentication} maxWidth={218} />
                   </ImageContainer>
+                  <Caption>
+                    The challenge of supporting legacy authentication
+                  </Caption>
                 </div>
               </Columns>
             </div>
@@ -478,7 +527,11 @@ const AutodeskUnificationCaseStudy = (props) => {
             standard sign-in flow.{" "}
           </p>
           <p>Here is the updated page:</p>
-          <Img src={ITBPlusAId} />
+          <ImageContainer>
+            <Img src={ITBPlusAId} />
+          </ImageContainer>
+          <Caption>Updated invitation-to-bid lander</Caption>
+          <Spacer height={18} />
           <List>
             <li>Branded sign-in button, foreshadows redirect to Autodesk</li>
             <li>
@@ -487,13 +540,13 @@ const AutodeskUnificationCaseStudy = (props) => {
               before”
             </li>
             <li>
-              Simplified, goal oriented call-to-action: “...to view this RFP and
+              Simplified, goal-oriented call-to-action: “...to view this RFP and
               download files”
             </li>
             <li>“Autodesk company” co-branding in header</li>
             <li>
               A “panic” sign-in button in header. For users who might be
-              confused or miss the secondary button
+              confused or miss the secondary button.
             </li>
           </List>
         </SubSection>
@@ -513,7 +566,9 @@ const AutodeskUnificationCaseStudy = (props) => {
             pattern used in sites and services that support 3rd-party
             applications).
           </p>
-          <Img src={TwoStep} />
+          <ImageContainer>
+            <Img src={TwoStep} />
+          </ImageContainer>
           <p>
             Functionally, this is very similar to how we needed to integrate
             Autodesk ID. The main difference is that instead of just checking
@@ -558,20 +613,26 @@ const AutodeskUnificationCaseStudy = (props) => {
             Combining these consdierations with all scenarios, I designed the
             following overall experience flow:
           </p>
-          <ImageContainer>
-            <Img src={SimplifiedFlow} />
-          </ImageContainer>
+          <a href={SimplifiedFlowLarge} target="_blank">
+            <ImageLinkOut src={SimplifiedFlow} />
+          </a>
+          <Spacer height="48" />
           <p>Here are all cases in more granular detail:</p>
           <Columns>
             <div>
               <ImageContainer>
                 <Img src={ITBFlow} maxWidth={510} />
               </ImageContainer>
+              <Caption>
+                All scenarios for signing-up from the invitation
+              </Caption>
             </div>
+            <Spacer width={24} />
             <div>
               <ImageContainer>
                 <Img src={SSOFlow} maxWidth={510} />
               </ImageContainer>
+              <Caption>Subsection for the “SSO” option</Caption>
             </div>
           </Columns>
         </SubSection>
@@ -592,10 +653,14 @@ const AutodeskUnificationCaseStudy = (props) => {
                 BuildingConnected using a new or existing Autodesk ID.
               </p>
             </div>
+            <Spacer width={24} />
             <div>
               <ImageContainer>
                 <Img src={TheSignUPCard} maxWidth={510} />
               </ImageContainer>
+              <Caption>
+                Call-to-action labels change depending on scenario
+              </Caption>
             </div>
           </Columns>
         </SubSection>
@@ -650,6 +715,7 @@ const AutodeskUnificationCaseStudy = (props) => {
           <ImageContainer>
             <Img src={ConfirmationPage} maxWidth={1024} />
           </ImageContainer>
+          <Spacer height={18} />
           <p>Key design choices:</p>
           <List>
             <li>
@@ -668,20 +734,22 @@ const AutodeskUnificationCaseStudy = (props) => {
             </li>
           </List>
         </SubSection>
-      </Section>
-      <Section>
-        <h3>Current status</h3>
-        <p>
-          The sign-up experience is currently in development and is slated to be
-          released for a trial period in March 2021. Autodesk ID integration is
-          a central part of BuildingConnected’s 2021 and 2022 roadmap. The
-          original research and project plan were presented in Fall 2019 and all
-          subsequent work was done in 2020. According to internal feedback,
-          while many in our division first found Autodesk integration to be
-          daunting task, these projects and my on going efforts to promote
-          Autodesk ID and share my knowledge have helped to make the process
-          more tangible and approachable.
-        </p>
+        <SubSection>
+          <h4>Current status</h4>
+          <p>
+            The sign-up experience is currently in development and is slated to
+            be released for a trial period in March 2021. Autodesk ID
+            integration is a central part of BuildingConnected’s 2021 and 2022
+            roadmap. The original research and project plan were presented in
+            Fall 2019 and all subsequent work was done in 2020.
+          </p>
+          <p>
+            According to internal feedback, while many in our division first
+            found Autodesk integration to be daunting task, these projects and
+            my on going efforts to promote Autodesk ID and share my knowledge
+            have helped to make the process more tangible and approachable.
+          </p>
+        </SubSection>
       </Section>
       <CaseStudyFooter>
         <p>Morgan Keys | Winter 2021</p>
