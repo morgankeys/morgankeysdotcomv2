@@ -303,7 +303,7 @@ const AutodeskIDCaseStudy = (props) => {
           </p>
           <p>
             During the <Bold>Pilot</Bold> phase, we would introduce Autodesk ID
-            to small groups (thorugh manual activation if necessary) in order to
+            to small groups (through manual activation if necessary) in order to
             get initial reactions and learn more about workflows. This would
             allow us to design and test specific experiences, such as as sign-up
             and sign-in, as well as develop integrations—for example sharing
@@ -476,15 +476,17 @@ const AutodeskIDCaseStudy = (props) => {
                 </li>
               </List>
             </div>
-            <Spacer width={24} />
+            <Spacer width={48} />
             <div>
               <ImageContainer>
                 <Img src={ADSKSignIn} maxWidth={510} />
               </ImageContainer>
+            </div>
+          </Columns>
               <Columns>
                 <div>
                   <ImageContainer>
-                    <Img src={InsertSignUp} maxWidth={218} />
+                    <Img src={InsertSignUp} maxWidth={510} />
                   </ImageContainer>
                   <Caption>
                     Architecture of the One Account implementation
@@ -493,15 +495,14 @@ const AutodeskIDCaseStudy = (props) => {
                 <Spacer width={24} />
                 <div>
                   <ImageContainer>
-                    <Img src={LegacyAuthentication} maxWidth={218} />
+                    <Img src={LegacyAuthentication} maxWidth={510} />
                   </ImageContainer>
                   <Caption>
                     The challenge of supporting legacy authentication
                   </Caption>
                 </div>
               </Columns>
-            </div>
-          </Columns>
+              <Spacer height={48}/>
         </SubSection>
         <SubSection>
           <h4>Updated lander</h4>
