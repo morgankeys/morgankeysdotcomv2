@@ -1,7 +1,21 @@
 Learning React by trying to rebuild my personal site. Going to try and have a little more fun with it this time...
 — Morgan
 
+# Morgan's Documentation
+
+## HTTPS
+Follow this guide to set up HTTPS:
+https://www.freecodecamp.org/news/simple-site-hosting-with-amazon-s3-and-https-5e78017f482a/
+
+The guide walks through the following steps:
+1. Setting up a static website via **S3 Buckets**
+2. Requesting a certificate via **AWS Certificate Manager**
+3. And distributing content via **Cloudfront** 
+    * Cloudfront requires your certificate be in US-east-1 (Virginia)
+    * I belive Cloudfront is what allows you to serve actually encrypted content—Certficate Manager is just about proving you own the domain.
+
 ---
+# CRA Documentation
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
