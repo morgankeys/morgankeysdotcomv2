@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 import Welcome from "./sections/Welcome";
 import Home from "./sections/Home/Home";
@@ -16,16 +16,16 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Switch>
-          <Route path="/welcome" exact component={Welcome} />
-          <Route path="/home" exact component={Home} />
-          <Route path="/autodesk-id" exact component={AutodeskIDCaseStudy} />
-          <Route path="/bc-design-systems" exact component={BCDS} />
-          <Route path="/bc-client-suggestions" exact component={BCClientSuggestions} />
-          <Route path="/og-coa" exact component={OGCoa} />
-          <Route path="/older-projects" exact component={OlderProjects} />
-          <Redirect to="/welcome" />
-        </Switch>
+        <Routes>
+          <Route path="/welcome" element={<Welcome/>} />
+          <Route path="/home" element={<Home/>} />
+          <Route path="/autodesk-id" element={<AutodeskIDCaseStudy/>} />
+          <Route path="/bc-design-systems" element={<BCDS/>} />
+          <Route path="/bc-client-suggestions" element={<BCClientSuggestions/>} />
+          <Route path="/og-coa" element={<OGCoa/>} />
+          <Route path="/older-projects" element={<OlderProjects/>} />
+          <Route path="*" element={<Navigate to="/welcome" />}/>
+        </Routes>
       </Router>
     );
   }
