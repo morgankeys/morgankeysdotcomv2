@@ -14,6 +14,14 @@ The guide walks through the following steps:
     * Cloudfront requires your certificate be in US-east-1 (Virginia)
     * I belive Cloudfront is what allows you to serve actually encrypted content—Certficate Manager is just about proving you own the domain.
 
+
+## AWS Deployment
+
+### Setup
+1. Make sure the AWS CLI tool is installed. See [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+
+
 ---
 # CRA Documentation
 
