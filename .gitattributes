@@ -1,0 +1,9 @@
+# Normalize all text files to LF in the repository and in the working tree,
+# on every platform. Keeps diffs clean when switching between macOS and Windows.
+* text=auto eol=lf
+
+# Binary assets: never touch line endings
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
